@@ -1,3 +1,25 @@
 // Layout
 @import '../../../styles/variables';
 @import '../../../styles/utils';
+
+$appHeight: 100vh;
+$leftBlockWidth: 1300px;
+
+#game {
+  display: flex;
+
+  div {
+    border: solid 1px;
+  }
+
+  #left-block {
+    flex: 2;
+    max-width: $leftBlockWidth;
+    height: $appHeight;
+  }
+
+  #right-block {
+    flex: 1;
+    height: $appHeight;
+  }
+}

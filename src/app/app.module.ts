@@ -22,6 +22,8 @@ import { AppState, InternalStateType } from './app.service';
 import '../styles/styles.scss';
 
 import { GameComponent } from './components/game/game.component';
+import { WallComponent } from './components/wall/wall.component';
+import { WitnessesComponent } from './components/witnesses/witnesses.component';
 
 import { routing, appRoutingProviders } from './app.routes';
 
@@ -56,6 +58,8 @@ type StoreType = {
   declarations: [
     AppComponent,
     GameComponent,
+    WitnessesComponent,
+    WallComponent,
   ],
   imports: [ // import Angular's modules
     BrowserModule,
