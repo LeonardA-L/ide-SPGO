@@ -12,6 +12,8 @@ import { AppState } from '../../app.service';
 
 import { Broadcaster } from '../../services/broadcast.service';
 
+import { Element } from '../../model/element.model';
+
 /*
  * App Component
  * Top Level Component
@@ -23,7 +25,8 @@ import { Broadcaster } from '../../services/broadcast.service';
   styleUrls: ['game.scss'],
 })
 export class GameComponent implements OnInit {
-  public howWell = 'great';
+  public gameState: any;
+  private maxElem = 4;
 
   constructor(
     public appState: AppState,
@@ -31,7 +34,26 @@ export class GameComponent implements OnInit {
   ) {}
 
   public ngOnInit() {
-    const ok = true;
+    this.gameState = {
+      elements: []
+    };
+  }
+
+  public pick(element: Element) {
+    if (this.gameState.elements.length < this.maxElem) {
+      this.gameState.elements.push(element);
+      element.selected = true;
+    }
+  }
+
+  public unpick(element: Element) {
+    element.selected = false;
+    for (let e in this.gameState.elements) {
+      if (this.gameState.elements[e].id === element.id) {
+        this.gameState.elements.splice(e, 1);
+        break;
+      }
+    }
   }
 
 }

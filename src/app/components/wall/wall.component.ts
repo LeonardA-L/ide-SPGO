@@ -3,6 +3,8 @@
  */
 import {
   Component,
+  Output,
+  EventEmitter,
   ViewEncapsulation,
 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
@@ -26,9 +28,15 @@ import { Element } from '../../model/element.model';
 })
 export class WallComponent {
   public elements: Element[] = [
-    new Element('/assets/img/elements/apple.png', 100, 100),
-    new Element('/assets/img/elements/apple.png', 200, 200),
+    new Element(0, '/assets/img/elements/apple.png', 100, 100),
+    new Element(1, '/assets/img/elements/apple.png', 200, 200),
   ];
+
+  @Output()
+  private pick = new EventEmitter();
+
+  @Output()
+  private unpick = new EventEmitter();
 
   constructor(
     public appState: AppState,
@@ -39,6 +47,14 @@ export class WallComponent {
       e.img = _sanitizer.bypassSecurityTrustResourceUrl(e.img);
       e.left = _sanitizer.bypassSecurityTrustStyle(e.x / 900 * 100 + '%');
       e.top = _sanitizer.bypassSecurityTrustStyle(e.y / 600 * 100 + '%');
+    }
+  }
+
+  public pickElement(elem: Element) {
+    if (elem.selected) {
+      this.unpick.next(elem);
+    } else {
+      this.pick.next(elem);
     }
   }
 

@@ -18,6 +18,7 @@ wall {
   .element {
     position: absolute;
     transition: filter $medium;
+    cursor: pointer;
   }
 
   .element:hover {

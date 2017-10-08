@@ -1,6 +1,8 @@
 <div id="elements-wrapper">
   <div *ngFor="let elem of elements" class="element"
-    [style.left]="elem.left" [style.top]="elem.top">
+    [style.left]="elem.left" [style.top]="elem.top"
+    [ngClass]="{selected: elem.selected}"
+    (click)="pickElement(elem)">
       <img [src]="elem.img" />
     </div>
 </div>

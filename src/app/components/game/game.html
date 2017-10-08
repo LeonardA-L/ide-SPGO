@@ -1,6 +1,6 @@
 <div id="game">
   <div id="left-block">
-    <wall></wall>
+    <wall (pick)="pick($event)" (unpick)="unpick($event)"></wall>
   </div>
   <div id="right-block">
     <witnesses></witnesses>
