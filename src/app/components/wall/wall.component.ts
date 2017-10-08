@@ -12,6 +12,8 @@ import { AppState } from '../../app.service';
 
 import { Broadcaster } from '../../services/broadcast.service';
 
+import { Element } from '../../model/element.model';
+
 /*
  * App Component
  * Top Level Component
@@ -23,17 +25,9 @@ import { Broadcaster } from '../../services/broadcast.service';
   styleUrls: ['wall.scss'],
 })
 export class WallComponent {
-  public elements: any[] = [
-    {
-      img: '/assets/img/elements/apple.png',
-      x: 100,
-      y: 100
-    },
-    {
-      img: '/assets/img/elements/apple.png',
-      x: 200,
-      y: 200
-    }
+  public elements: Element[] = [
+    new Element('/assets/img/elements/apple.png', 100, 100),
+    new Element('/assets/img/elements/apple.png', 200, 200),
   ];
 
   constructor(
@@ -42,6 +36,7 @@ export class WallComponent {
     private _sanitizer: DomSanitizer,
   ) {
     for (let e of this.elements) {
+      e.img = _sanitizer.bypassSecurityTrustResourceUrl(e.img);
       e.left = _sanitizer.bypassSecurityTrustStyle(e.x / 900 * 100 + '%');
       e.top = _sanitizer.bypassSecurityTrustStyle(e.y / 600 * 100 + '%');
     }

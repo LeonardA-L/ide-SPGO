@@ -1,4 +1,13 @@
 //
+@import '../../../styles/variables';
+
+
+@mixin drop-shadow($color) {
+  $size: 12px;
+  $offset: 0px;
+  filter: drop-shadow($offset $offset $size $color);
+  -webkit-filter: drop-shadow($offset $offset $size $color);
+}
 
 wall {
   .elements-wrapper {
@@ -8,5 +17,14 @@ wall {
   }
   .element {
     position: absolute;
+    transition: filter $medium;
+  }
+
+  .element:hover {
+    @include drop-shadow($elemHover);
+  }
+
+  .element.selected {
+    @include drop-shadow($elemSelected);
   }
 }
