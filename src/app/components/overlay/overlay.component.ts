@@ -3,6 +3,8 @@
  */
 import {
   Component,
+  OnInit,
+  Input,
   ViewEncapsulation,
 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
@@ -22,16 +24,32 @@ import { GameService } from '../../services/game.service';
   templateUrl: 'overlay.html',
   styleUrls: ['overlay.scss'],
 })
-export class OverlayComponent {
+export class OverlayComponent implements OnInit {
+  @Input()
+  public startSequence: string;
+
+  public currentSequence: string;
 
   constructor(
     public appState: AppState,
     private broadcaster: Broadcaster,
-    private gameService: GameService,
+    public gameService: GameService,
   ) {}
+
+  public ngOnInit() {
+    this.currentSequence = this.startSequence || null;
+  }
 
   public changeLang(lang) {
     this.gameService.initGame(lang);
+  }
+
+  public startGame() {
+    this.goSequence('le début');
+  }
+
+  public goSequence(seq) {
+    this.currentSequence = seq;
   }
 
 }
