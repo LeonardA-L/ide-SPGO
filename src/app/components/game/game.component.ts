@@ -7,11 +7,11 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Http } from '@angular/http';
 
 import { AppState } from '../../app.service';
 
 import { Broadcaster } from '../../services/broadcast.service';
+import { GameService } from '../../services/game.service';
 
 import { Element } from '../../model/element.model';
 
@@ -34,9 +34,9 @@ export class GameComponent implements OnInit {
 
   constructor(
     public appState: AppState,
+    public gameService: GameService,
+    private translate: TranslateService,
     private broadcaster: Broadcaster,
-    public translate: TranslateService,
-    private http: Http,
   ) {}
 
   public ngOnInit() {
@@ -44,9 +44,7 @@ export class GameComponent implements OnInit {
       elements: []
     };
 
-    const service = this;
-    const fileName = '/assets/spgo_navigation_' + this.translate.getDefaultLang() + '.json';
-    this.http.get(fileName).map((res) => res.json()).subscribe((success1) => service.processGameJSON(success1));
+    this.gameService.initGame();
   }
 
   public pick(element: Element) {
@@ -64,22 +62,6 @@ export class GameComponent implements OnInit {
         break;
       }
     }
-  }
-
-  private processGameJSON(jsonData) {
-    this.gameData = {};
-
-    // Delete useless properties
-    jsonData.forEach((elem) => {
-      delete elem.pid;
-      delete elem.position;
-      delete elem.tags;
-
-      elem.childrenNames = elem.childrenNames.map((c) => c.replace(/\[\[.+->(.+)\]\]/i, '$1'));
-      this.gameData[elem.name] = elem;
-    });
-
-    console.log(this.gameData);
   }
 
 }

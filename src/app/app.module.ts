@@ -24,6 +24,7 @@ import '../styles/styles.scss';
 import { GameComponent } from './components/game/game.component';
 import { WallComponent } from './components/wall/wall.component';
 import { WitnessesComponent } from './components/witnesses/witnesses.component';
+import { OverlayComponent } from './components/overlay/overlay.component';
 
 import { routing, appRoutingProviders } from './app.routes';
 
@@ -32,6 +33,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { Broadcaster } from './services/broadcast.service';
+import { GameService } from './services/game.service';
 
 import { CONFIG } from './environment';
 
@@ -60,6 +62,7 @@ type StoreType = {
     GameComponent,
     WitnessesComponent,
     WallComponent,
+    OverlayComponent,
   ],
   imports: [ // import Angular's modules
     BrowserModule,
@@ -82,6 +85,7 @@ type StoreType = {
     APP_PROVIDERS,
     appRoutingProviders,
     Broadcaster,
+    GameService,
   ]
 })
 export class AppModule {
