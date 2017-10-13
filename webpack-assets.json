@@ -1,0 +1,12 @@
+{
+  "vendor": {
+    "js": "/ide-SPGO/vendor.f6209f7b22668d6859dd.bundle.js"
+  },
+  "main": {
+    "js": "/ide-SPGO/main.ccb0b236dd547b03c9e9.bundle.js",
+    "css": "/ide-SPGO/main.59ce9219ca52d45febc2c41e37106939.css"
+  },
+  "polyfills": {
+    "js": "/ide-SPGO/polyfills.de13c41e5064e0f12163.bundle.js"
+  }
+}
