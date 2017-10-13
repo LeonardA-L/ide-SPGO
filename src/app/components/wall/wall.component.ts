@@ -28,8 +28,8 @@ import { Element } from '../../model/element.model';
 })
 export class WallComponent {
   public elements: Element[] = [
-    new Element(0, '/assets/img/elements/apple.png', 100, 100),
-    new Element(1, '/assets/img/elements/apple.png', 200, 200),
+    new Element(0, '/assets/img/elements/1_poster_chiromancie.png', 400, 100),
+    new Element(1, '/assets/img/elements/2_peinture_foret.png', 100, 300),
   ];
 
   @Output()
