@@ -5,6 +5,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { Http } from '@angular/http';
 
 import { AppState } from './../app.service';
+import { CONFIG } from './../environment';
 
 @Injectable()
 export class GameService {
@@ -19,7 +20,7 @@ export class GameService {
   public initGame(lang?) {
     this.translate.setDefaultLang(lang || this.translate.getDefaultLang());
     const service = this;
-    const fileName = '/assets/spgo_navigation_' + this.translate.getDefaultLang() + '.json';
+    const fileName = CONFIG.root + '/assets/spgo_navigation_' + this.translate.getDefaultLang() + '.json';
     this.http.get(fileName).map((res) => res.json()).subscribe((success) => service.processGameJSON(success));
   }
 
