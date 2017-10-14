@@ -38,8 +38,12 @@ export class WitnessesComponent {
     this.currentSequence = 'se rendre sur la propriété';
   }
 
-  public goSequence(_seq) {
+  public goSequence(_seq, _idx, _del?) {
     let seq = _seq;
+    if (_del) {
+      this.gameService.gameData[this.currentSequence].childrenNames.splice(_idx, 1);
+    }
+
     if (seq === 'restart') {
       this.broadcaster.broadcast('restart');
       return;
