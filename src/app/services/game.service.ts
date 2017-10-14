@@ -96,7 +96,7 @@ export class GameService {
       }
 
       if (elem.name === 'se rendre sur la propriété') {
-        // elem.childrenNames = [];
+        elem.childrenNames = [];
       }
 
       this.gameData[elem.name] = elem;

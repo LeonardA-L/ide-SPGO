@@ -24,6 +24,7 @@ import { GameService } from '../../services/game.service';
 })
 export class WitnessesComponent {
   public currentSequence: string;
+  public hoverName: string;
 
   constructor(
     public appState: AppState,
@@ -49,6 +50,10 @@ export class WitnessesComponent {
       return;
     }
     this.currentSequence = seq;
+  }
+
+  public setHover(name) {
+    this.hoverName = name;
   }
 
 }
