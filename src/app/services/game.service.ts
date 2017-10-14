@@ -11,6 +11,22 @@ import { Broadcaster } from './broadcast.service';
 @Injectable()
 export class GameService {
   public gameData: any;
+  public witnesses = [{
+      name: 'Régine',
+      picture: null
+    },
+    {
+      name: 'Howard',
+      picture: null
+    },
+    {
+      name: 'Gérard',
+      picture: null
+    },
+    {
+      name: 'Pauline',
+      picture: null
+    }];
   public json;
 
   constructor(
@@ -31,11 +47,12 @@ export class GameService {
   }
 
   public startGame(json) {
-    if(json) {
+    if (json) {
       this.json = json;
-      this.processGameJSON(this.json);
     }
+    this.processGameJSON(this.json);
     this.broadcaster.broadcast('overlay', null);
+    this.broadcaster.broadcast('init', null);
   }
 
   private processGameJSON(jsonData) {
@@ -50,7 +67,8 @@ export class GameService {
       elem.childrenNames = elem.childrenNames.map((c) => {
         let link = {
           link: c.replace(/\[\[(.+)->(.+)\]\]/i, '$1'),
-          goal: c.replace(/\[\[(.+)->(.+)\]\]/i, '$2')
+          goal: c.replace(/\[\[(.+)->(.+)\]\]/i, '$2'),
+          translate: false
         };
 
         if (link.goal === 'se rendre sur la propriété') {
@@ -72,12 +90,31 @@ export class GameService {
       if (elem.name === 'ne pas lire la lettre') {
         elem.childrenNames = [{
           link: 'restart',
-          goal: 'restart'
-          translate: true;
+          goal: 'restart',
+          translate: true
         }];
       }
 
+      if (elem.name === 'se rendre sur la propriété') {
+        // elem.childrenNames = [];
+      }
+
       this.gameData[elem.name] = elem;
+    });
+
+    this.witnesses.forEach((w) => {
+      const elem = this.gameData[w.name];
+
+      elem.childrenNames.map((k) => k.goal).forEach((c) => {
+        let childElem = this.gameData[c];
+        childElem.childrenNames = [
+          {
+            link: w.name + '.backto',
+            goal: w.name,
+            translate: true
+          }
+        ];
+      });
     });
 
     console.log('Loaded Navigation JSON');

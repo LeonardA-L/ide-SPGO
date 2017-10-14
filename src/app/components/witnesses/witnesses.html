@@ -1,1 +1,9 @@
+<div>
 witnesses
+</div>
+<div *ngIf="currentSequence">
+  <p>{{gameService.gameData[currentSequence].content}}</p>
+  <div>
+    <button *ngFor="let choice of gameService.gameData[currentSequence].childrenNames" (click)="goSequence(choice.goal)">{{choice.translate ? (choice.link | translate) : choice.link}}</button>
+  </div>
+</div>
