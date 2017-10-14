@@ -1,3 +1,10 @@
 <div id="hud">
-  <div *ngIf="displayOxygen" class="oxygen-tank">{{gameService.gameState.oxygen}}</div>
+  <div class="inventory">
+    <div *ngFor="let elem of gameService.gameState.elements" class="element">
+      <img [src]="elem.img" height="50px"/>
+    </div>
+  </div>
+  <div class="oxygen-tank">
+    <div *ngIf="displayOxygen">{{gameService.gameState.oxygen}}</div>
+  </div>
 </div>

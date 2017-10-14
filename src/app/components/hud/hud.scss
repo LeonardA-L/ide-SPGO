@@ -5,4 +5,18 @@ hud {
 
 #hud {
   display:flex;
+  height: 60px;
+
+  .oxygen-tank {
+    flex: 1;
+  }
+
+  .inventory {
+    flex: 1;
+    display: flex;
+
+    .element {
+      flex: 1;
+    }
+  }
 }
