@@ -20,3 +20,19 @@ $leftBlockWidth: 1000px;
     overflow-y: auto;
   }
 }
+
+#teddy {
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  top:0;
+  bottom:0;
+  right: 0;
+  background: #FEE;
+  padding: 50px;
+
+  textarea {
+    width: 80%;
+    height: 500px;
+  }
+}

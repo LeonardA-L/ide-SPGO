@@ -30,6 +30,7 @@ import { CONFIG } from '../../environment';
   styleUrls: ['game.scss'],
 })
 export class GameComponent implements OnInit {
+  public teddy = false;
   private maxElem = CONFIG.maxElem;
 
   constructor(
@@ -37,11 +38,15 @@ export class GameComponent implements OnInit {
     public gameService: GameService,
     private translate: TranslateService,
     private broadcaster: Broadcaster,
+    private route: ActivatedRoute,
   ) {}
 
   public ngOnInit() {
     this.gameService.gameState = {};
-    this.gameService.initGame();
+    this.teddy = this.route.snapshot.queryParams.teddy; // Debug hack
+    if (!this.teddy) {
+      this.gameService.initGame();
+    }
   }
 
   public pick(element: Element) {
@@ -63,6 +68,11 @@ export class GameComponent implements OnInit {
         break;
       }
     }
+  }
+
+  public startFromTeddy() {
+    this.teddy = false;
+    this.gameService.startGame();
   }
 
 }

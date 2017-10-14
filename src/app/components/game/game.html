@@ -7,3 +7,10 @@
   </div>
 </div>
 <overlay></overlay>
+<div id="teddy" *ngIf="teddy">
+  <h1>Salut Teddy</h1>
+  <p>Colle le json appelé <em>Plain JSON Output</em> dans Twine ci-dessous et valide pour le tester dans le jeu.</p>
+  <textarea [(ngModel)]="gameService.json"></textarea><br>
+  <button (click)="startFromTeddy()">Lancer le jeu</button>
+  <p><em>NB: Si tu changes de langue ou recharges la page les modifications seront perdues. Envoie le JSON quand il est prêt pour que je l'intègre</em></p>
+</div>
