@@ -13,6 +13,8 @@ import { AppState } from '../../app.service';
 import { Broadcaster } from '../../services/broadcast.service';
 import { GameService } from '../../services/game.service';
 
+import { CONFIG } from '../../environment';
+
 /*
  * App Component
  * Top Level Component
@@ -48,7 +50,10 @@ export class HudComponent implements OnInit {
   public testimony(event) {
     const seq = this.gameService.gameData[event];
     if (seq.name === 'Bouteilles') {
-      this.displayOxygen = true;
+      const compo = this;
+      setTimeout(() => {
+        compo.displayOxygen = true;
+      }, CONFIG.tankDisplayDelay);
     }
   }
 

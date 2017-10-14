@@ -37,6 +37,10 @@ wall {
     @include drop-shadow($elemSelected);
   }
 
+  .element.correct {
+    @include drop-shadow($elemCorrect);
+  }
+
   .clickthrough {
     pointer-events: none;
   }

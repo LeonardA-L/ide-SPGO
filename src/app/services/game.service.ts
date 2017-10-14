@@ -51,19 +51,39 @@ export class GameService {
 
   public startGame(json) {
     if (json) {
-      this.json = json;
+      this.json = JSON.stringify(json);
     }
-    this.processGameJSON(this.json);
+    this.processGameJSON(JSON.parse(this.json));
+    this.gameState = {
+      elements: [],
+      oxygen: CONFIG.oxygen.start,
+      victory: false,
+    };
     this.broadcaster.broadcast('overlay', null);
     this.broadcaster.broadcast('init', null);
   }
 
   public testimony(json) {
     this.gameState.oxygen -= CONFIG.oxygen.witnessDecay;
+    this.gameState.oxygen = Math.max(0, this.gameState.oxygen);
   }
 
   public elementSelect(json) {
     this.gameState.oxygen -= CONFIG.oxygen.elementDecay;
+    this.gameState.oxygen = Math.max(0, this.gameState.oxygen);
+  }
+
+  public victoryCheck() {
+    let countRight = 0;
+    this.gameState.elements.forEach((e) => {
+      countRight += +(e.selected && e.good);
+    });
+
+    if (CONFIG.maxElem === countRight) {
+      this.gameState.victory = true;
+      this.broadcaster.broadcast('victory', this.gameState.oxygen > 0);
+      this.victory();
+    }
   }
 
   private processGameJSON(jsonData) {
@@ -100,16 +120,23 @@ export class GameService {
         }];
       }
 
-      if (elem.name === 'ne pas lire la lettre') {
+      if (elem.name === 'se rendre sur la propriété') {
+        elem.childrenNames = [];
+      }
+
+      if (elem.name === 'Untitled Passage') {
+        elem.name = 'Lose';
+      }
+      if (elem.name === 'Untitled Passage 1') {
+        elem.name = 'Win';
+      }
+
+      if (elem.name === 'ne pas lire la lettre' || elem.name === 'Lose' || elem.name === 'Win') {
         elem.childrenNames = [{
           link: 'restart',
           goal: 'restart',
           translate: true
         }];
-      }
-
-      if (elem.name === 'se rendre sur la propriété') {
-        elem.childrenNames = [];
       }
 
       this.gameData[elem.name] = elem;
@@ -132,5 +159,18 @@ export class GameService {
 
     console.log('Loaded Navigation JSON');
     console.log(this.gameData);
+  }
+
+  private victory() {
+    function delay(t) {
+      return new Promise((resolve) => {
+        setTimeout(resolve, t);
+      });
+    }
+
+    delay(1000)
+    .then(() => {
+      this.broadcaster.broadcast('overlay', this.gameState.oxygen > 0 ? 'Win' : 'Lose');
+    });
   }
 }

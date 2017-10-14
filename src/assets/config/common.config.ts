@@ -15,6 +15,8 @@ export const config = {
     start: 100,
     elementDecay: 10,
     witnessDecay: 5
-  }
+  },
+  tankDisplayDelay: 2000,
+  maxElem: 4
 
 };

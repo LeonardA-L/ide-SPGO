@@ -30,7 +30,7 @@ import { CONFIG } from '../../environment';
   styleUrls: ['game.scss'],
 })
 export class GameComponent implements OnInit {
-  private maxElem = 4;
+  private maxElem = CONFIG.maxElem;
 
   constructor(
     public appState: AppState,
@@ -40,11 +40,7 @@ export class GameComponent implements OnInit {
   ) {}
 
   public ngOnInit() {
-    this.gameService.gameState = {
-      elements: [],
-      oxygen: CONFIG.oxygen.start,
-    };
-
+    this.gameService.gameState = {};
     this.gameService.initGame();
   }
 
@@ -52,6 +48,10 @@ export class GameComponent implements OnInit {
     if (this.gameService.gameState.elements.length < this.maxElem) {
       this.gameService.gameState.elements.push(element);
       element.selected = true;
+
+      if (this.gameService.gameState.elements.length === this.maxElem) {
+        this.gameService.victoryCheck();
+      }
     }
   }
 
