@@ -1,3 +1,22 @@
 {
-  "title": "Sa plus grande Oeuvre"
+  "title": "Sa plus grande Oeuvre",
+  "start": "Examiner la scène",
+  "restart": "Recommencer",
+
+  "Régine": {
+    "backto": "Retour à Régine",
+    "speakto": "Parler à Régine Martineau"
+  },
+  "Pauline": {
+    "backto": "Retour à Pauline",
+    "speakto": "Parler à Pauline Bourdy"
+  },
+  "Gérard": {
+    "backto": "Retour à Gérard",
+    "speakto": "Parler à Gérard Duvin"
+  },
+  "Howard": {
+    "backto": "Retour à Howard",
+    "speakto": "Parler à Howard Blackherring"
+  }
 }
