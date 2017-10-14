@@ -1,14 +1,16 @@
-<div>
-  <div id="selection-wrapper">
-    <div *ngFor="let wit of gameService.witnesses" class="witness" (click)="goSequence(wit.name, -1, false)" (mouseover)="setHover(wit.name)" (mouseleave)="setHover(null)">
-      <img src="wit.picture" width="100%" />
+<div class="witnesses-inner">
+  <div class="witness-selection">
+    <div id="selection-wrapper">
+      <div *ngFor="let wit of gameService.witnesses" class="witness" (click)="goSequence(wit.name, -1, false)" (mouseover)="setHover(wit.name)" (mouseleave)="setHover(null)">
+        <img src="wit.picture" width="100%" />
+      </div>
     </div>
+    <p><span *ngIf="hoverName">{{hoverName + '.speakto' | translate}}</span>&nbsp;</p>
   </div>
-  <p><span *ngIf="hoverName">{{hoverName + '.speakto' | translate}}</span>&nbsp;</p>
-</div>
-<div *ngIf="currentSequence">
-  <p>{{gameService.gameData[currentSequence].content}}</p>
-  <div>
-    <button *ngFor="let choice of gameService.gameData[currentSequence].childrenNames; let i = index" (click)="goSequence(choice.goal, i, true)">{{choice.translate ? (choice.link | translate) : choice.link}}</button>
+  <div *ngIf="currentSequence" class="testimony">
+    <p>{{gameService.gameData[currentSequence].content}}</p>
+    <div class="choice-wrapper">
+      <button *ngFor="let choice of gameService.gameData[currentSequence].childrenNames; let i = index" (click)="goSequence(choice.goal, i, true)">{{choice.translate ? (choice.link | translate) : choice.link}}</button>
+    </div>
   </div>
 </div>

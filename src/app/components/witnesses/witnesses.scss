@@ -1,10 +1,26 @@
 //
 witnesses {
   $witSize: 100px;
+  $rightBlockMargin: 2vh;
+
+  .witnesses-inner {
+    padding: $rightBlockMargin;
+
+    .witness-selection, .testimony {
+      background: #FFFFFFAA;
+      padding: 25px;
+    }
+  }
 
   #selection-wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .witness-selection {
+    p {
+      margin-bottom: 0;
+    }
   }
 
   .witness {
@@ -13,4 +29,13 @@ witnesses {
     background: #FFF;
     max-width: $witSize;
   }
+
+  .testimony {
+    min-height: 50vh;
+
+    p {
+      margin: 0;
+    }
+  }
+
 }
