@@ -6,6 +6,7 @@ import { Http } from '@angular/http';
 
 import { AppState } from './../app.service';
 import { CONFIG } from './../environment';
+import { Broadcaster } from './broadcast.service';
 
 @Injectable()
 export class GameService {
@@ -15,13 +16,19 @@ export class GameService {
     public appState: AppState,
     public translate: TranslateService,
     private http: Http,
+    private broadcaster: Broadcaster,
   ) {}
 
   public initGame(lang?) {
     this.translate.setDefaultLang(lang || this.translate.getDefaultLang());
     const service = this;
     const fileName = CONFIG.root + '/assets/spgo_navigation_' + this.translate.getDefaultLang() + '.json';
-    this.http.get(fileName).map((res) => res.json()).subscribe((success) => service.processGameJSON(success));
+    this.http.get(fileName).map((res) => res.json()).subscribe((success) => service.startGame(success));
+  }
+
+  public startGame(json) {
+    this.processGameJSON(json);
+    this.broadcaster.broadcast('overlay', null);
   }
 
   private processGameJSON(jsonData) {
@@ -33,7 +40,28 @@ export class GameService {
       delete elem.position;
       delete elem.tags;
 
-      elem.childrenNames = elem.childrenNames.map((c) => c.replace(/\[\[.+->(.+)\]\]/i, '$1'));
+      elem.childrenNames = elem.childrenNames.map((c) => {
+        let link = {
+          link: c.replace(/\[\[(.+)->(.+)\]\]/i, '$1'),
+          goal: c.replace(/\[\[(.+)->(.+)\]\]/i, '$2')
+        };
+
+        if (link.goal === 'se rendre sur la propriété') {
+          link.goal = 'start';
+          link.translate = true;
+        }
+
+        return link;
+      });
+
+      if(elem.name === 'la police vous embarque') {
+        elem.childrenNames = [{
+          link: 'start',
+          goal: 'start'
+          translate: true;
+        }];
+      }
+
       this.gameData[elem.name] = elem;
     });
 

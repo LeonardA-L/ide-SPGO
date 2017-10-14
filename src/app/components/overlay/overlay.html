@@ -1,14 +1,16 @@
-<div *ngIf="!currentSequence">
-  <h1>{{'title' | translate}}</h1>
-  <div>
-    <button (click)="startGame()">Start</button>
-    <div><span (click)="changeLang('fr')">fr</span> | <span (click)="changeLang('en')">en</span></div>
+<div id="overlay" *ngIf="activate">
+  <div *ngIf="!currentSequence">
+    <h1>{{'title' | translate}}</h1>
+    <div>
+      <button (click)="startGame()">Start</button>
+      <div><span (click)="changeLang('fr')">fr</span> | <span (click)="changeLang('en')">en</span></div>
+    </div>
   </div>
-</div>
-<div *ngIf="currentSequence">
-  <h1>{{currentSequence}}</h1>
-  <p>{{gameService.gameData[currentSequence].content}}</p>
-  <div>
-    <button *ngFor="let choice of gameService.gameData[currentSequence].childrenNames" (click)="goSequence(choice)">{{choice}}</button>
+  <div *ngIf="currentSequence">
+    <h1>{{currentSequence}}</h1>
+    <p>{{gameService.gameData[currentSequence].content}}</p>
+    <div>
+      <button *ngFor="let choice of gameService.gameData[currentSequence].childrenNames" (click)="goSequence(choice.goal)">{{choice.translate ? (choice.link | translate) : choice.link}}</button>
+    </div>
   </div>
 </div>

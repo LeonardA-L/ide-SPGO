@@ -4,7 +4,6 @@
 import {
   Component,
   OnInit,
-  Input,
   ViewEncapsulation,
 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
@@ -25,19 +24,22 @@ import { GameService } from '../../services/game.service';
   styleUrls: ['overlay.scss'],
 })
 export class OverlayComponent implements OnInit {
-  @Input()
-  public startSequence: string;
-
   public currentSequence: string;
+
+  public activate: bool = true;
 
   constructor(
     public appState: AppState,
     private broadcaster: Broadcaster,
     public gameService: GameService,
-  ) {}
+  ) {
+    const compo = this;
+    this.broadcaster.on<any>('overlay').subscribe((event) => compo.startOverlay(event));
+  }
 
-  public ngOnInit() {
-    this.currentSequence = this.startSequence || null;
+  public startOverlay(event) {
+    this.activate = true;
+    this.currentSequence = event || null;
   }
 
   public changeLang(lang) {
