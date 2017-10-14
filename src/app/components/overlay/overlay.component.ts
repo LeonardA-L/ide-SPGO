@@ -26,7 +26,7 @@ import { GameService } from '../../services/game.service';
 export class OverlayComponent implements OnInit {
   public currentSequence: string;
 
-  public activate: bool = true;
+  public activate = true;
 
   constructor(
     public appState: AppState,
@@ -35,6 +35,10 @@ export class OverlayComponent implements OnInit {
   ) {
     const compo = this;
     this.broadcaster.on<any>('overlay').subscribe((event) => compo.startOverlay(event));
+  }
+
+  public ngOnInit() {
+    this.startOverlay(null);
   }
 
   public startOverlay(event) {
@@ -50,7 +54,16 @@ export class OverlayComponent implements OnInit {
     this.goSequence('le début');
   }
 
-  public goSequence(seq) {
+  public goSequence(_seq) {
+    let seq = _seq;
+    if (seq === 'start') {
+      this.activate = false;
+      return;
+    }
+    if (seq === 'restart') {
+      this.broadcaster.broadcast('restart');
+      return;
+    }
     this.currentSequence = seq;
   }
 

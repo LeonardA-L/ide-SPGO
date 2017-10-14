@@ -11,13 +11,17 @@ import { Broadcaster } from './broadcast.service';
 @Injectable()
 export class GameService {
   public gameData: any;
+  public json;
 
   constructor(
     public appState: AppState,
     public translate: TranslateService,
     private http: Http,
     private broadcaster: Broadcaster,
-  ) {}
+  ) {
+    const service = this;
+    this.broadcaster.on<any>('restart').subscribe((event) => service.startGame(null));
+  }
 
   public initGame(lang?) {
     this.translate.setDefaultLang(lang || this.translate.getDefaultLang());
@@ -27,7 +31,10 @@ export class GameService {
   }
 
   public startGame(json) {
-    this.processGameJSON(json);
+    if(json) {
+      this.json = json;
+      this.processGameJSON(this.json);
+    }
     this.broadcaster.broadcast('overlay', null);
   }
 
@@ -54,10 +61,18 @@ export class GameService {
         return link;
       });
 
-      if(elem.name === 'la police vous embarque') {
+      if (elem.name === 'la police vous embarque') {
         elem.childrenNames = [{
           link: 'start',
-          goal: 'start'
+          goal: 'start',
+          translate: true
+        }];
+      }
+
+      if (elem.name === 'ne pas lire la lettre') {
+        elem.childrenNames = [{
+          link: 'restart',
+          goal: 'restart'
           translate: true;
         }];
       }
