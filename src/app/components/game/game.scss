@@ -8,10 +8,6 @@ $leftBlockWidth: 1100px;
 #game {
   display: flex;
 
-  div {
-    border: solid 1px;
-  }
-
   #left-block {
     flex: 2;
     max-width: $leftBlockWidth;

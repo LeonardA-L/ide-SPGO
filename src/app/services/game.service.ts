@@ -64,6 +64,8 @@ export class GameService {
       delete elem.position;
       delete elem.tags;
 
+      elem.content = elem.content.replace(/\[\[.+\]\]\s?/gmi, '');
+
       elem.childrenNames = elem.childrenNames.map((c) => {
         let link = {
           link: c.replace(/\[\[(.+)->(.+)\]\]/i, '$1'),

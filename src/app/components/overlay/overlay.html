@@ -7,7 +7,6 @@
     </div>
   </div>
   <div *ngIf="currentSequence">
-    <h1>{{currentSequence}}</h1>
     <p>{{gameService.gameData[currentSequence].content}}</p>
     <div>
       <button *ngFor="let choice of gameService.gameData[currentSequence].childrenNames" (click)="goSequence(choice.goal)">{{choice.translate ? (choice.link | translate) : choice.link}}</button>

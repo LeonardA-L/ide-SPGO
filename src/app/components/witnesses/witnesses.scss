@@ -2,13 +2,14 @@
 witnesses {
   $witSize: 100px;
   $rightBlockMargin: 2vh;
+  $pad: 25px;
 
   .witnesses-inner {
     padding: $rightBlockMargin;
 
     .witness-selection, .testimony {
       background: #FFFFFFAA;
-      padding: 25px;
+      padding: $pad;
     }
   }
 
@@ -24,6 +25,7 @@ witnesses {
   }
 
   .witness {
+    cursor: pointer;
     flex: 1;
     display: inline-block;
     background: #FFF;
@@ -32,6 +34,7 @@ witnesses {
 
   .testimony {
     min-height: 50vh;
+    margin-top : $rightBlockMargin;
 
     p {
       margin: 0;
