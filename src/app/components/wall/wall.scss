@@ -37,4 +37,8 @@ wall {
   .element.selected {
     @include drop-shadow($elemSelected);
   }
+
+  .clickthrough {
+    pointer-events: none;
+  }
 }

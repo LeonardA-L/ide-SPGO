@@ -32,7 +32,7 @@ export class WallComponent {
     new Element(0, CONFIG.root + '/assets/img/elements/1_poster_chiromancie.png', 81.8, 92.2, 62.8),
     new Element(1, CONFIG.root + '/assets/img/elements/2_peinture_foret.png', 3, 42.2, 57.5),
     new Element(2, CONFIG.root + '/assets/img/elements/3_chaines.png', 23.2, 40.1, 75.2),
-    new Element(3, CONFIG.root + '/assets/img/elements/4_fil_rouge.png', 9.3, 93.2, 11.7),
+    new Element(3, CONFIG.root + '/assets/img/elements/4_fil_rouge.png', 9.3, 93.2, 11.7, true),
     new Element(4, CONFIG.root + '/assets/img/elements/5_freud.png', 11.3, 31.4, 32.5),
     new Element(5, CONFIG.root + '/assets/img/elements/6_amandier.png', 29.4, 79.78, -13.5),
     new Element(6, CONFIG.root + '/assets/img/elements/7_coffre.png', 16.1, 21.2, 40.3),

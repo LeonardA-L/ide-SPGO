@@ -1,7 +1,7 @@
 <div id="elements-wrapper">
   <div *ngFor="let elem of elements" class="element"
     [style.left]="elem.left" [style.top]="elem.top" [style.width]="elem.width"
-    [ngClass]="{selected: elem.selected}"
+    [ngClass]="{selected: elem.selected, clickthrough: elem.clickThrough}"
     (click)="pickElement(elem)">
       <img [src]="elem.img" width="100%"/>
     </div>
