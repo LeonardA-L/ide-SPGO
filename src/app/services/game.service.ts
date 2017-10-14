@@ -11,6 +11,7 @@ import { Broadcaster } from './broadcast.service';
 @Injectable()
 export class GameService {
   public gameData: any;
+  public gameState: any;
   public witnesses = [{
       name: 'Régine',
       picture: null
@@ -37,6 +38,8 @@ export class GameService {
   ) {
     const service = this;
     this.broadcaster.on<any>('restart').subscribe((event) => service.startGame(null));
+    this.broadcaster.on<any>('testimony').subscribe((event) => service.testimony(event));
+    this.broadcaster.on<any>('elementSelect').subscribe((event) => service.elementSelect(event));
   }
 
   public initGame(lang?) {
@@ -53,6 +56,14 @@ export class GameService {
     this.processGameJSON(this.json);
     this.broadcaster.broadcast('overlay', null);
     this.broadcaster.broadcast('init', null);
+  }
+
+  public testimony(json) {
+    this.gameState.oxygen -= CONFIG.oxygen.witnessDecay;
+  }
+
+  public elementSelect(json) {
+    this.gameState.oxygen -= CONFIG.oxygen.elementDecay;
   }
 
   private processGameJSON(jsonData) {

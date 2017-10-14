@@ -13,4 +13,5 @@
       <button *ngFor="let choice of gameService.gameData[currentSequence].childrenNames; let i = index" (click)="goSequence(choice.goal, i, true)">{{choice.translate ? (choice.link | translate) : choice.link}}</button>
     </div>
   </div>
+  <hud></hud>
 </div>

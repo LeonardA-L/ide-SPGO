@@ -2,12 +2,12 @@
 witnesses {
   $witSize: 100px;
   $rightBlockMargin: 2vh;
-  $pad: 25px;
+  $pad: 20px;
 
   .witnesses-inner {
     padding: $rightBlockMargin;
 
-    .witness-selection, .testimony {
+    .witness-selection, .testimony, hud {
       background: #FFFFFFAA;
       padding: $pad;
     }
@@ -39,6 +39,10 @@ witnesses {
     p {
       margin: 0;
     }
+  }
+
+  hud {
+    margin-top : $rightBlockMargin;
   }
 
 }

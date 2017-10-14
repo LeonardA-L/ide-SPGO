@@ -50,6 +50,7 @@ export class WitnessesComponent {
       return;
     }
     this.currentSequence = seq;
+    this.broadcaster.broadcast('testimony', seq);
   }
 
   public setHover(name) {

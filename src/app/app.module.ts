@@ -25,6 +25,7 @@ import { GameComponent } from './components/game/game.component';
 import { WallComponent } from './components/wall/wall.component';
 import { WitnessesComponent } from './components/witnesses/witnesses.component';
 import { OverlayComponent } from './components/overlay/overlay.component';
+import { HudComponent } from './components/hud/hud.component';
 
 import { routing, appRoutingProviders } from './app.routes';
 
@@ -63,6 +64,7 @@ type StoreType = {
     WitnessesComponent,
     WallComponent,
     OverlayComponent,
+    HudComponent,
   ],
   imports: [ // import Angular's modules
     BrowserModule,

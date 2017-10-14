@@ -17,6 +17,8 @@ import { Element } from '../../model/element.model';
 
 import { TranslateService } from '@ngx-translate/core';
 
+import { CONFIG } from '../../environment';
+
 /*
  * App Component
  * Top Level Component
@@ -28,9 +30,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['game.scss'],
 })
 export class GameComponent implements OnInit {
-  public gameState: any;
   private maxElem = 4;
-  private gameData: any;
 
   constructor(
     public appState: AppState,
@@ -40,25 +40,26 @@ export class GameComponent implements OnInit {
   ) {}
 
   public ngOnInit() {
-    this.gameState = {
-      elements: []
+    this.gameService.gameState = {
+      elements: [],
+      oxygen: CONFIG.oxygen.start,
     };
 
     this.gameService.initGame();
   }
 
   public pick(element: Element) {
-    if (this.gameState.elements.length < this.maxElem) {
-      this.gameState.elements.push(element);
+    if (this.gameService.gameState.elements.length < this.maxElem) {
+      this.gameService.gameState.elements.push(element);
       element.selected = true;
     }
   }
 
   public unpick(element: Element) {
     element.selected = false;
-    for (let e in this.gameState.elements) {
-      if (this.gameState.elements[e].id === element.id) {
-        this.gameState.elements.splice(e, 1);
+    for (let e in this.gameService.gameState.elements) {
+      if (this.gameService.gameState.elements[e].id === element.id) {
+        this.gameService.gameState.elements.splice(e, 1);
         break;
       }
     }
