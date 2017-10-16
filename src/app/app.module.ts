@@ -35,6 +35,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { Broadcaster } from './services/broadcast.service';
 import { GameService } from './services/game.service';
+import { AudioService } from './services/audio.service';
 
 import { CONFIG } from './environment';
 
@@ -88,6 +89,7 @@ type StoreType = {
     appRoutingProviders,
     Broadcaster,
     GameService,
+    AudioService,
   ]
 })
 export class AppModule {

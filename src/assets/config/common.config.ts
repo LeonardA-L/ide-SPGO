@@ -17,6 +17,11 @@ export const config = {
     witnessDecay: 5
   },
   tankDisplayDelay: 2000,
-  maxElem: 4
+  maxElem: 4,
+
+  audio: {
+    master: 1,
+    ramp: 10, // s
+  }
 
 };

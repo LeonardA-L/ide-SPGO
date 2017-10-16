@@ -12,6 +12,7 @@ import { AppState } from '../../app.service';
 
 import { Broadcaster } from '../../services/broadcast.service';
 import { GameService } from '../../services/game.service';
+import { AudioService } from '../../services/audio.service';
 
 import { Element } from '../../model/element.model';
 
@@ -39,6 +40,7 @@ export class GameComponent implements OnInit {
     private translate: TranslateService,
     private broadcaster: Broadcaster,
     private route: ActivatedRoute,
+    private audio: AudioService,
   ) {}
 
   public ngOnInit() {
@@ -47,6 +49,7 @@ export class GameComponent implements OnInit {
     if (!this.teddy) {
       this.gameService.initGame();
     }
+    this.audio.init();
   }
 
   public pick(element: Element) {
@@ -72,7 +75,7 @@ export class GameComponent implements OnInit {
 
   public startFromTeddy() {
     this.teddy = false;
-    this.gameService.startGame();
+    this.gameService.startGame(null);
   }
 
 }
