@@ -33,7 +33,6 @@ export class AudioService {
       }
       this.volume *= CONFIG.audio.master;
     };
-    audio.dom.play();
 
     this.audios.push(audio);
   }
