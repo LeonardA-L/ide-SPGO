@@ -1,11 +1,12 @@
 //
+@import '../../../styles/variables';
+
 witnesses {
   $witSize: 100px;
-  $rightBlockMargin: 2vh;
   $pad: 20px;
 
   .witnesses-inner {
-    padding: $rightBlockMargin;
+    padding: $UIMargin;
 
     .witness-selection, .testimony, hud {
       background: #FFFFFFAA;
@@ -34,15 +35,10 @@ witnesses {
 
   .testimony {
     min-height: 30vh;
-    margin-top : $rightBlockMargin;
 
     p {
       margin: 0;
     }
-  }
-
-  hud {
-    margin-top : $rightBlockMargin;
   }
 
 }

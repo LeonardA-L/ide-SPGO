@@ -11,9 +11,11 @@
 
 wall {
   width: 100%;
-  padding-bottom: 66%;
+  padding-bottom: 31vw;
   display: block;
   position: relative;
+  max-width: 50vw;
+  margin: 0 auto;
 
   #elements-wrapper {
     position: absolute;

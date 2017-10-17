@@ -3,13 +3,16 @@
 @import '../../../styles/utils';
 
 $appHeight: 100vh;
-$leftBlockWidth: 1000px;
+$leftBlockWidth: 1200px;
 
 #game {
   display: flex;
+  background: url('../../../assets/img/floor.png') no-repeat;
+  background-position: bottom center;
+  background-size: 100% 24vh; 
 
   #left-block {
-    flex: 2;
+    flex: 1.5;
     max-width: $leftBlockWidth;
     height: $appHeight;
   }
