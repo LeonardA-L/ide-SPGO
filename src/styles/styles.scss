@@ -30,9 +30,9 @@ button {
   cursor: pointer;
   margin-left: 10px;
   transition: background-color $fast;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
-button:hover {
+button:hover, .read {
   background: $buttonHBG;
 }

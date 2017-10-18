@@ -39,10 +39,10 @@ export class WitnessesComponent {
     this.currentSequence = 'se rendre sur la propriété';
   }
 
-  public goSequence(_seq, _idx, _del?) {
+  public goSequence(_seq, _idx, _link?) {
     let seq = _seq;
-    if (_del) {
-      // this.gameService.gameData[this.currentSequence].childrenNames.splice(_idx, 1);
+    if (_link) {
+      _link.read = true;
     }
 
     if (seq === 'restart') {

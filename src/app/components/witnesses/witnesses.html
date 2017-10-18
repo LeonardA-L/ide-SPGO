@@ -2,7 +2,7 @@
   <div *ngIf="currentSequence" class="testimony">
     <p>{{gameService.gameData[currentSequence].content}}</p>
     <div class="choice-wrapper">
-      <button *ngFor="let choice of gameService.gameData[currentSequence].childrenNames; let i = index" (click)="goSequence(choice.goal, i, true)">{{choice.translate ? (choice.link | translate) : choice.link}}</button>
+      <button [ngClass]="{read: choice.read}" *ngFor="let choice of gameService.gameData[currentSequence].childrenNames; let i = index" (click)="goSequence(choice.goal, i, choice)">{{choice.translate ? (choice.link | translate) : choice.link}}</button>
     </div>
   </div>
   <div class="witness-selection">
