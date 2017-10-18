@@ -120,10 +120,10 @@ export class GameService {
         }];
       }
 
-      if (elem.name === 'Untitled Passage') {
+      if (elem.name === 'Untitled Passage' || elem.name === 'Perdu') {
         elem.name = 'Lose';
       }
-      if (elem.name === 'Untitled Passage 1') {
+      if (elem.name === 'Untitled Passage 1' || elem.name === 'Gagné') {
         elem.name = 'Win';
       }
 
