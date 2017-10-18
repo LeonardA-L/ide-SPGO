@@ -6,10 +6,11 @@
       <div><span (click)="changeLang('fr')">fr</span> | <span (click)="changeLang('en')">en</span></div>
     </div>
   </div>
-  <div *ngIf="currentSequence">
-    <p>{{gameService.gameData[currentSequence].content}}</p>
-    <div>
+  <div *ngIf="currentSequence" class="page">
+    <markdown [data]="gameService.gameData[currentSequence].content"></markdown>
+    <div class="button-wrapper">
       <button *ngFor="let choice of gameService.gameData[currentSequence].childrenNames" (click)="goSequence(choice.goal)">{{choice.translate ? (choice.link | translate) : choice.link}}</button>
     </div>
+    <div class="bottom-line"></div>
   </div>
 </div>

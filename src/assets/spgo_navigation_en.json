@@ -9,7 +9,7 @@
     "tags": [
       ""
     ],
-    "content": "Vous recevez un appel du commissariat central. Un grand artiste a disparu dans la nuit, en ne laissant pour seul indice qu'une lettre qui vous est adressée. [[Lire la lettre->Lire la lettre]]  [[ne pas lire la lettre->ne pas lire la lettre]]",
+    "content": "Vous **recevez** *un* appel du commissariat central.\n\nUn grand artiste a disparu dans la nuit, en ne laissant pour seul indice qu'une lettre qui vous est adressée. [[Lire la lettre->Lire la lettre]]  [[ne pas lire la lettre->ne pas lire la lettre]]",
     "childrenNames": [
       "[[Lire la lettre->Lire la lettre]]",
       "[[ne pas lire la lettre->ne pas lire la lettre]]"

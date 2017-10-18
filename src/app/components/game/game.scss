@@ -2,9 +2,6 @@
 @import '../../../styles/variables';
 @import '../../../styles/utils';
 
-$appHeight: 100vh;
-$leftBlockWidth: 1200px;
-$wallHeight: 76vh;
 #game {
   display: flex;
   background: url('../../../assets/img/floor.png') no-repeat;
@@ -19,7 +16,7 @@ $wallHeight: 76vh;
     .wall-wrapper {
       height: $wallHeight;
       wall {
-        margin-top: calc((#{$wallHeight} - 31vw) / 2);
+        margin-top: calc((#{$wallHeight} - #{$wallRatio}) / 2);
       }
     }
 

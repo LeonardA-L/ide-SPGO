@@ -10,3 +10,25 @@ body {
   background: url('../assets/img/background.jpg');
   background-attachment: fixed;
 }
+
+.button-wrapper {
+  text-align: right;
+}
+
+button {
+  height: 42px;
+  border: none;
+  border-radius: 0;
+  background: $buttonBG;
+  color: #FFF;
+  padding: 4px 15px;
+  min-width: 100px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color $fast;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: $buttonHBG;
+}

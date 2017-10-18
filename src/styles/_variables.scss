@@ -2,6 +2,9 @@
 $elemHover: #F6EB70;
 $elemSelected: #F00;
 $elemCorrect: #0F0;
+$buttonBGC: #2418ce;
+$buttonBG: rgba($buttonBGC, 0.8);
+$buttonHBG: rgba($buttonBGC, 0.5);
 // Sizes
 
 // Times
@@ -10,3 +13,7 @@ $medium: 0.5s;
 
 // Sizes
 $UIMargin: 3.4vh;
+$appHeight: 100vh;
+$leftBlockWidth: 1200px;
+$wallHeight: 76vh;
+$wallRatio: 31vw;
