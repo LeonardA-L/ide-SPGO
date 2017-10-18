@@ -4,17 +4,28 @@
 
 $appHeight: 100vh;
 $leftBlockWidth: 1200px;
-
+$wallHeight: 76vh;
 #game {
   display: flex;
   background: url('../../../assets/img/floor.png') no-repeat;
   background-position: bottom center;
-  background-size: 100% 24vh; 
+  background-size: 100% ($appHeight - $wallHeight); 
 
   #left-block {
     flex: 1.5;
     max-width: $leftBlockWidth;
     height: $appHeight;
+
+    .wall-wrapper {
+      height: $wallHeight;
+      wall {
+        margin-top: calc((#{$wallHeight} - 31vw) / 2);
+      }
+    }
+
+    .wall-center {
+      border: solid 2px blue;
+    }
   }
 
   #right-block {
