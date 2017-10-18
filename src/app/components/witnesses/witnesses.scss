@@ -1,5 +1,6 @@
 //
 @import '../../../styles/variables';
+@import '../../../styles/utils';
 
 witnesses {
   $witSize: 100px;
@@ -21,8 +22,18 @@ witnesses {
   .witness-selection {
     margin-top: $UIMargin + 1vh;
     height: $hudHeight;
+    position: relative;
     p {
-      margin-bottom: 0;
+      margin: 0;
+      position: absolute;
+      top: -$UIMargin;
+      left: 0;
+      color: $speakTo;
+      text-align: center;
+      width: 100%;
+      font-weight: 600;
+      font-size: 1.3em;
+      @include drop-shadow($speakToShadow);
     }
   }
 
@@ -45,6 +56,7 @@ witnesses {
 
     .choice-wrapper {
       margin-top: 40px;
+      margin-bottom: 15px;
     }
 
     button {
