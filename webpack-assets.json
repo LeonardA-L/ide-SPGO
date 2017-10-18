@@ -1,12 +1,12 @@
 {
   "vendor": {
-    "js": "/ide-SPGO/vendor.9d53284aa8ccdebc4c5b.bundle.js"
+    "js": "/ide-SPGO/vendor.97d80804329989d12249.bundle.js"
   },
   "main": {
-    "js": "/ide-SPGO/main.f7601620b7d332a27dda.bundle.js",
-    "css": "/ide-SPGO/main.44082765fe0d62a6f8ed4d5b30b61fa3.css"
+    "js": "/ide-SPGO/main.7527ef3ba29bd11bfa89.bundle.js",
+    "css": "/ide-SPGO/main.49cbd1a1e4e7bfeb0760ffaf298a9852.css"
   },
   "polyfills": {
-    "js": "/ide-SPGO/polyfills.23359d3f7d00639ab603.bundle.js"
+    "js": "/ide-SPGO/polyfills.d98e63ce33d6a4a4a58a.bundle.js"
   }
 }
