@@ -1,22 +1,29 @@
 //
+@import '../../../styles/variables';
+@import '../../../styles/utils';
+
 hud {
   display: block;
 }
 
 #hud {
   display:flex;
-  height: 60px;
+  height: 100%;
 
   .oxygen-tank {
     flex: 1;
   }
 
   .inventory {
-    flex: 1;
-    display: flex;
+    flex: 1.8;
+    line-height: ($appHeight - $wallHeight);
 
     .element {
-      flex: 1;
+      display: inline-block;
+      width: 25%;
+      vertical-align: middle;
+
+      @include drop-shadow($elemHover);
     }
   }
 }

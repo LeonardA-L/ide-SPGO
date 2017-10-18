@@ -1,5 +1,12 @@
 // Mixins
 
+@mixin drop-shadow($color) {
+  $size: 8px;
+  $offset: 0px;
+  filter: drop-shadow($offset $offset $size $color);
+  -webkit-filter: drop-shadow($offset $offset $size $color);
+}
+
 @mixin user-select($value) {
 	-webkit-user-select: $value;  /* Chrome all / Safari all */
 	-moz-user-select: $value;     /* Firefox all */

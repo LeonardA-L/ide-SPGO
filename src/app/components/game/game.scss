@@ -12,9 +12,12 @@
     flex: 1.5;
     max-width: $leftBlockWidth;
     height: $appHeight;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .wall-wrapper {
-      height: $wallHeight;
+      //height: $wallHeight;
       wall {
         margin-top: calc((#{$wallHeight} - #{$wallRatio}) / 2);
       }
@@ -23,12 +26,16 @@
     .wall-center {
       border: solid 2px blue;
     }
+
+    hud {
+      height: ($appHeight - $wallHeight);
+    }
   }
 
   #right-block {
     flex: 1;
     height: $appHeight;
-    overflow-y: auto;
+    overflow: hidden;
   }
 }
 

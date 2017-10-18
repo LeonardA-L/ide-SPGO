@@ -3,13 +3,12 @@
 
 witnesses {
   $witSize: 100px;
-  $pad: 20px;
 
   .witnesses-inner {
     padding: $UIMargin;
 
     .witness-selection, .testimony, hud {
-      background: #FFFFFFAA;
+      background: $hudBG;
       padding: $pad;
     }
   }
@@ -20,6 +19,8 @@ witnesses {
   }
 
   .witness-selection {
+    margin-top: $UIMargin + 1vh;
+    height: $hudHeight;
     p {
       margin-bottom: 0;
     }
@@ -34,7 +35,9 @@ witnesses {
   }
 
   .testimony {
-    min-height: 30vh;
+    overflow-y: auto;
+
+    height: $appHeight - 3 * $UIMargin - 4 * $pad - $hudHeight;
 
     p {
       margin: 0;

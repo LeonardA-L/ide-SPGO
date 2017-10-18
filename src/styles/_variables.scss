@@ -5,6 +5,8 @@ $elemCorrect: #0F0;
 $buttonBGC: #2418ce;
 $buttonBG: rgba($buttonBGC, 0.8);
 $buttonHBG: rgba($buttonBGC, 0.5);
+$hudBG: rgba(#FFF, 0.8);
+
 // Sizes
 
 // Times
@@ -15,5 +17,7 @@ $medium: 0.5s;
 $UIMargin: 3.4vh;
 $appHeight: 100vh;
 $leftBlockWidth: 1200px;
-$wallHeight: 76vh;
+$wallHeight: 80vh;
 $wallRatio: 31vw;
+$hudHeight: 11.1vh;
+$pad: 2vh;

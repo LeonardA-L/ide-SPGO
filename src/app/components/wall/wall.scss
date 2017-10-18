@@ -1,13 +1,6 @@
 //
 @import '../../../styles/variables';
-
-
-@mixin drop-shadow($color) {
-  $size: 8px;
-  $offset: 0px;
-  filter: drop-shadow($offset $offset $size $color);
-  -webkit-filter: drop-shadow($offset $offset $size $color);
-}
+@import '../../../styles/utils';
 
 wall {
   width: 100%;
