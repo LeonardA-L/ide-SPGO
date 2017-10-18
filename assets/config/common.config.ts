@@ -12,9 +12,9 @@ export const config = {
   },
 
   oxygen: {
-    start: 100,
-    elementDecay: 10,
-    witnessDecay: 5
+    start: 80,
+    elementDecay: 5,
+    witnessDecay: 1
   },
   tankDisplayDelay: 2000,
   maxElem: 4,
