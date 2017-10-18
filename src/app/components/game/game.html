@@ -3,7 +3,7 @@
     <div class="wall-wrapper">
       <wall (pick)="pick($event)" (unpick)="unpick($event)"></wall>
     </div>
-    <hud></hud>
+    <hud (unpick)="unpick($event)"></hud>
   </div>
   <div id="right-block">
     <witnesses></witnesses>

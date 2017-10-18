@@ -19,6 +19,7 @@ hud {
     line-height: ($appHeight - $wallHeight);
 
     .element {
+      cursor: pointer;
       display: inline-block;
       width: 25%;
       vertical-align: middle;

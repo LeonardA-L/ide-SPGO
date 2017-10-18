@@ -120,10 +120,6 @@ export class GameService {
         }];
       }
 
-      if (elem.name === 'se rendre sur la propriété') {
-        elem.childrenNames = [];
-      }
-
       if (elem.name === 'Untitled Passage') {
         elem.name = 'Lose';
       }

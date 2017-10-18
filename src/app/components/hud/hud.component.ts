@@ -3,6 +3,8 @@
  */
 import {
   Component,
+  Output,
+  EventEmitter,
   OnInit,
   ViewEncapsulation,
 } from '@angular/core';
@@ -27,6 +29,9 @@ import { CONFIG } from '../../environment';
 })
 export class HudComponent implements OnInit {
   public displayOxygen = false;
+
+  @Output()
+  private unpick = new EventEmitter();
 
   constructor(
     public appState: AppState,
@@ -54,6 +59,12 @@ export class HudComponent implements OnInit {
       setTimeout(() => {
         compo.displayOxygen = true;
       }, CONFIG.tankDisplayDelay);
+    }
+  }
+
+  public unpickElem(elem: Element) {
+    if (elem.selected) {
+      this.unpick.next(elem);
     }
   }
 

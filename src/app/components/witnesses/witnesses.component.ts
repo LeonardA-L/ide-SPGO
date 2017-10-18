@@ -42,7 +42,7 @@ export class WitnessesComponent {
   public goSequence(_seq, _idx, _del?) {
     let seq = _seq;
     if (_del) {
-      this.gameService.gameData[this.currentSequence].childrenNames.splice(_idx, 1);
+      // this.gameService.gameData[this.currentSequence].childrenNames.splice(_idx, 1);
     }
 
     if (seq === 'restart') {
