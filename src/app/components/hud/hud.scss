@@ -12,6 +12,52 @@ hud {
 
   .oxygen-tank {
     flex: 1;
+    $oxH: 60px;
+
+    .oxygen-wrapper {
+      height: $oxH;
+      margin-top: calc((#{($appHeight - $wallHeight)} - #{$oxH}) / 2);
+      position: relative;
+    }
+
+    .decorator {
+      width: 100%;
+      display: flex;
+      z-index: 5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      .start {
+        width: 13px;
+        background: url('../../../assets/img/bottle_s.png') no-repeat;
+      }
+      .end {
+        width: 71px;
+        background: url('../../../assets/img/bottle_e.png') no-repeat;
+      }
+      .mid {
+        background: url('../../../assets/img/bottle_m.png') repeat-x;
+        flex: 1;
+      }
+      .img {
+        height: $oxH;
+        background-size: auto 100%;
+      }
+    }
+
+    .gauge {
+      transition: width $medium, background-color $medium;
+      background: $fullgauge;
+      z-index: 1;
+      position: absolute;
+      top: 5px;
+      left: 6px;
+      width: 50%;
+      height: 86%;
+    }
+    .danger {
+      background: $dangergauge;
+    }
   }
 
   .inventory {

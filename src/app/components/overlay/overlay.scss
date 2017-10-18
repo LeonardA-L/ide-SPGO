@@ -1,8 +1,9 @@
+@import '../../../styles/variables';
 //
 #overlay {
   height: 100vh;
   width: 100vw;
-  background: #FFFFFFEE;
+  background: $overlayBG;
   position: fixed;
   top: 0;
   left: 0;

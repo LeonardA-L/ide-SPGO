@@ -16,6 +16,7 @@ import { Broadcaster } from '../../services/broadcast.service';
 import { GameService } from '../../services/game.service';
 
 import { CONFIG } from '../../environment';
+import { Element } from '../../model/element.model';
 
 /*
  * App Component

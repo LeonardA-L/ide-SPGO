@@ -5,6 +5,13 @@
     </div>
   </div>
   <div class="oxygen-tank">
-    <div *ngIf="displayOxygen">{{gameService.gameState.oxygen}}</div>
+    <div class="oxygen-wrapper" *ngIf="displayOxygen">
+      <div class="decorator">
+        <span class="img start"></span>
+        <span class="img mid"></span>
+        <span class="img end"></span>
+      </div>
+      <div class="gauge" [style.width]="gameService.gameState.oxygen + '%'" [ngClass]="{danger: gameService.gameState.oxygen < 30}"></div>
+    </div>
   </div>
 </div>
