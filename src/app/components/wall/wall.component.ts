@@ -83,7 +83,6 @@ export class WallComponent {
       this.unpick.next(elem);
     } else {
       this.pick.next(elem);
-      this.broadcaster.broadcast('elementSelect', elem);
     }
   }
 

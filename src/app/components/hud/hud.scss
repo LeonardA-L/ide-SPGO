@@ -63,6 +63,7 @@ hud {
   .inventory {
     flex: 1.8;
     line-height: ($appHeight - $wallHeight);
+    vertical-align: middle;
 
     .element {
       cursor: pointer;

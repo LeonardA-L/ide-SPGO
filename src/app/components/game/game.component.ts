@@ -56,6 +56,7 @@ export class GameComponent implements OnInit {
     if (this.gameService.gameState.elements.length < this.maxElem) {
       this.gameService.gameState.elements.push(element);
       element.selected = true;
+      this.broadcaster.broadcast('elementSelect', element);
 
       if (this.gameService.gameState.elements.length === this.maxElem) {
         this.gameService.victoryCheck();
