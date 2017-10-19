@@ -48,7 +48,10 @@ export class WallComponent {
     new Element(15, CONFIG.root + '/assets/img/elements/16_peinture_puits.png', 78.6, 97.8, 4.3),
     new Element(16, CONFIG.root + '/assets/img/elements/17_escarpins.png', 85.6, 95.4, 29.5, true),
     new Element(17, CONFIG.root + '/assets/img/elements/18_croquis_manoir.png', 57, 76, 4.6),
-    new Element(18, CONFIG.root + '/assets/img/elements/19_peinture_lac.png', 57, 84.6, 40.5)
+    new Element(18, CONFIG.root + '/assets/img/elements/19_peinture_lac.png', 57, 84.6, 40.5),
+
+    new Element(19, CONFIG.root + '/assets/img/elements/FIL1.png', 51.9, 70.0, 29.5, false, true, true),
+    new Element(20, CONFIG.root + '/assets/img/elements/FIL2.png', 36.3, 90, 43.7, false, true, true),
   ];
 
   @Output()
@@ -70,6 +73,7 @@ export class WallComponent {
     }
     const compo = this;
     this.broadcaster.on<any>('init').subscribe((event) => compo.reset());
+    this.broadcaster.on<any>('showThread').subscribe((event) => compo.showThread());
   }
 
   public reset() {
@@ -83,6 +87,15 @@ export class WallComponent {
       this.unpick.next(elem);
     } else {
       this.pick.next(elem);
+    }
+  }
+
+  public showThread() {
+    for (let e of this.elements) {
+      if (e.hidden) {
+        e.hidden = false;
+        break;
+      }
     }
   }
 

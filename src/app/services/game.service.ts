@@ -166,6 +166,14 @@ export class GameService {
 
     delay(1000)
     .then(() => {
+      this.broadcaster.broadcast('showThread');
+      return delay(1000);
+    })
+    .then(() => {
+      this.broadcaster.broadcast('showThread');
+      return delay(3000);
+    })
+    .then(() => {
       this.broadcaster.broadcast('overlay', this.gameState.oxygen > 0 ? 'Win' : 'Lose');
     });
   }

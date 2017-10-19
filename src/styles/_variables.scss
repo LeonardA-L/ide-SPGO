@@ -1,7 +1,7 @@
 // Colors
-$elemHover: #F6EB70;
-$elemSelected: #F00;
-$elemCorrect: #0F0;
+$elemHover: #F3D218;
+$elemSelected: #03F6FF;
+$elemCorrect: #51BC46;
 $buttonBGC: #00284D;
 $buttonBG: rgba($buttonBGC, 0.4);
 $buttonHBG: rgba($buttonBGC, 0.25);
@@ -17,12 +17,13 @@ $dangergauge: #ff2f00;
 // Times
 $fast: 0.2s;
 $medium: 0.5s;
+$slow: 0.9s;
 
 // Sizes
 $UIMargin: 3.4vh;
 $appHeight: 100vh;
 $leftBlockWidth: 1200px;
 $wallHeight: 80vh;
-$wallRatio: 31vw;
+$wallRatio: 34vw;
 $hudHeight: 11.1vh;
 $pad: 2vh;

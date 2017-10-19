@@ -20,8 +20,13 @@ wall {
   }
   .element {
     position: absolute;
-    transition: filter $medium;
+    transition: filter $medium, opacity $slow;
     cursor: pointer;
+    opacity: 1;
+  }
+
+  .hidden {
+    opacity: 0;
   }
 
   .element:hover {
