@@ -19,14 +19,14 @@ witnesses {
   #selection-wrapper {
     display: flex;
     justify-content: space-between;
-    opacity: 1;
-    transition: opacity $slow;
   }
 
   .witness-selection {
     margin-top: $UIMargin + 1vh;
     height: $hudHeight;
     position: relative;
+    opacity: 1;
+    transition: opacity $slow;
     p {
       margin: 0;
       position: absolute;
