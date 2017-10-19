@@ -4,8 +4,8 @@ $icon-18_croquis_manoir: 0px -167px 171px 106px;
 $icon-13_roue_astrologique: 0px -273px 111px 107px;
 $icon-12_charentaises: 0px -380px 128px 110px;
 $icon-17_escarpins: 0px -490px 90px 117px;
-$icon-1_poster_chiromancie: 0px -607px 94px 135px;
-$icon-9_la_disparue: 0px -742px 103px 135px;
+$icon-9_la_disparue: 0px -607px 103px 135px;
+$icon-1_poster_chiromancie: 0px -742px 94px 135px;
 $icon-5_freud: 0px -877px 181px 154px;
 $icon-3_chaines: 0px -1031px 154px 155px;
 $icon-16_peinture_puits: 0px -1186px 170px 198px;
@@ -15,9 +15,11 @@ $icon-10_photo_houdini: 0px -1798px 288px 252px;
 $icon-2_peinture_foret: 0px -2050px 353px 254px;
 $icon-8_centaure: 0px -2304px 280px 275px;
 $icon-11_trophee_de_chasse: 0px -2579px 173px 282px;
-$icon-19_peinture_lac: 0px -2861px 250px 361px;
-$icon-4_fil_rouge: 0px -3222px 763px 486px;
-$icon-6_amandier: 0px -3708px 453px 499px;
+$icon-FIL2: 0px -2861px 483px 297px;
+$icon-19_peinture_lac: 0px -3158px 250px 361px;
+$icon-FIL1: 0px -3519px 163px 373px;
+$icon-4_fil_rouge: 0px -3892px 763px 486px;
+$icon-6_amandier: 0px -4378px 453px 499px;
 
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
@@ -80,13 +82,13 @@ $icon-6_amandier: 0px -3708px 453px 499px;
   background-image: url('../sprites/sprite-src-assets-img-elements.png');
 }
 
-.icon-1_poster_chiromancie {
-  @include sprite($icon-1_poster_chiromancie);
+.icon-9_la_disparue {
+  @include sprite($icon-9_la_disparue);
   background-image: url('../sprites/sprite-src-assets-img-elements.png');
 }
 
-.icon-9_la_disparue {
-  @include sprite($icon-9_la_disparue);
+.icon-1_poster_chiromancie {
+  @include sprite($icon-1_poster_chiromancie);
   background-image: url('../sprites/sprite-src-assets-img-elements.png');
 }
 
@@ -135,8 +137,18 @@ $icon-6_amandier: 0px -3708px 453px 499px;
   background-image: url('../sprites/sprite-src-assets-img-elements.png');
 }
 
+.icon-FIL2 {
+  @include sprite($icon-FIL2);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
 .icon-19_peinture_lac {
   @include sprite($icon-19_peinture_lac);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-FIL1 {
+  @include sprite($icon-FIL1);
   background-image: url('../sprites/sprite-src-assets-img-elements.png');
 }
 

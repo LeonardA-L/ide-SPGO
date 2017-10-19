@@ -12,11 +12,12 @@ export const config = {
   },
 
   oxygen: {
-    start: 80,
+    start: 85,
     elementDecay: 5,
     witnessDecay: 1
   },
   tankDisplayDelay: 2000,
+  witDisplayDelay: 4000,
   maxElem: 4,
 
   audio: {
