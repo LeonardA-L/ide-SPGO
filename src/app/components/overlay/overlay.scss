@@ -59,6 +59,10 @@
     }
     .lang {
       margin-right: 19px;
+
+      span {
+        cursor: pointer;
+      }
     }
   }
 }
