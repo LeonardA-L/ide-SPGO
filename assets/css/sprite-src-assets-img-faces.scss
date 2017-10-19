@@ -1,0 +1,56 @@
+$icon-GERARD: 0px 0px 200px 200px;
+$icon-HOWARD: 0px -200px 200px 200px;
+$icon-PAULINE: 0px -400px 200px 200px;
+$icon-REGINE: 0px -600px 200px 200px;
+
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 3);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 4);
+}
+
+@function sprite-width($sprite) {
+  @return nth($sprite, 3);
+}
+
+@function sprite-height($sprite) {
+  @return nth($sprite, 4);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 1);
+  $sprite-offset-y: nth($sprite, 2);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite($sprite) {
+  @include sprite-position($sprite);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+.icon-GERARD {
+  @include sprite($icon-GERARD);
+  background-image: url('../sprites/sprite-src-assets-img-faces.png');
+}
+
+.icon-HOWARD {
+  @include sprite($icon-HOWARD);
+  background-image: url('../sprites/sprite-src-assets-img-faces.png');
+}
+
+.icon-PAULINE {
+  @include sprite($icon-PAULINE);
+  background-image: url('../sprites/sprite-src-assets-img-faces.png');
+}
+
+.icon-REGINE {
+  @include sprite($icon-REGINE);
+  background-image: url('../sprites/sprite-src-assets-img-faces.png');
+}
+
