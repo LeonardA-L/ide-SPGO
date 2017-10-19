@@ -49,13 +49,12 @@ export class HudComponent implements OnInit {
   }
 
   public init() {
-    console.log('Hud');
     this.displayOxygen = false;
   }
 
   public testimony(event) {
     const seq = this.gameService.gameData[event];
-    if (seq.name === 'Bouteilles') {
+    if (seq.name === 'Oxygène') {
       const compo = this;
       setTimeout(() => {
         compo.displayOxygen = true;

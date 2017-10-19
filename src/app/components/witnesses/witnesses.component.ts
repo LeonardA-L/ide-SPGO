@@ -11,6 +11,7 @@ import { AppState } from '../../app.service';
 
 import { Broadcaster } from '../../services/broadcast.service';
 import { GameService } from '../../services/game.service';
+import { CONFIG } from '../../environment';
 
 /*
  * App Component
@@ -25,6 +26,7 @@ import { GameService } from '../../services/game.service';
 export class WitnessesComponent {
   public currentSequence: string;
   public hoverName: string;
+  public showWitnesses = false;
 
   constructor(
     public appState: AppState,
@@ -32,6 +34,7 @@ export class WitnessesComponent {
     private broadcaster: Broadcaster,
   ) {
     const compo = this;
+    this.broadcaster.on<any>('testimony').subscribe((event) => compo.testimony(event));
     this.broadcaster.on<any>('init').subscribe((event) => compo.init());
   }
 
@@ -55,6 +58,16 @@ export class WitnessesComponent {
 
   public setHover(name) {
     this.hoverName = name;
+  }
+
+  public testimony(event) {
+    const seq = this.gameService.gameData[event];
+    if (seq.name === 'Oxygène') {
+      const compo = this;
+      setTimeout(() => {
+        compo.showWitnesses = true;
+      }, CONFIG.witDisplayDelay);
+    }
   }
 
 }
