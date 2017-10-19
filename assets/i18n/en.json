@@ -5,18 +5,18 @@
 
   "Régine": {
     "backto": "Back to Régine",
-    "speakto": "Speak to Régine Martineau"
+    "speakto": "Régine Martineau, Head of Police"
   },
   "Pauline": {
     "backto": "Back to Pauline",
-    "speakto": "Speak to Pauline Bourdy"
+    "speakto": "Pauline Bourdy, the Artist's Daughter"
   },
   "Gérard": {
     "backto": "Back to Gérard",
-    "speakto": "Speak to Gérard Duvin"
+    "speakto": "Gérard Duvin, the Butler"
   },
   "Howard": {
     "backto": "Back to Howard",
-    "speakto": "Speak to Howard Blackherring"
+    "speakto": "Howard Blackherring, Curator"
   }
 }
