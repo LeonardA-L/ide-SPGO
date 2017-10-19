@@ -51,6 +51,8 @@ witnesses {
 
   .testimony {
     overflow-y: auto;
+    opacity: 1;
+    transition: opacity $slow;
 
     height: $appHeight - 3 * $UIMargin - 4 * $pad - $hudHeight;
 

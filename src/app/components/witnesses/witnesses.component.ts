@@ -27,6 +27,7 @@ export class WitnessesComponent {
   public currentSequence: string;
   public hoverName: string;
   public showWitnesses = false;
+  public showTestimony = false;
   public hide = false;
 
   constructor(
@@ -38,11 +39,13 @@ export class WitnessesComponent {
     this.broadcaster.on<any>('testimony').subscribe((event) => compo.testimony(event));
     this.broadcaster.on<any>('init').subscribe((event) => compo.init());
     this.broadcaster.on<any>('victory').subscribe((event) => compo.hideUI());
+    this.broadcaster.on<any>('noOverlay').subscribe((event) => compo.showUI());
   }
 
   public init() {
     this.currentSequence = 'se rendre sur la propriété';
     this.showWitnesses = false;
+    this.showTestimony = false;
     this.hide = false;
   }
 
@@ -76,6 +79,13 @@ export class WitnessesComponent {
 
   public hideUI() {
     this.hide = true;
+  }
+
+  public showUI() {
+    const compo = this;
+    setTimeout(() => {
+      compo.showTestimony = true;
+    }, CONFIG.tesDisplayDelay);
   }
 
 }

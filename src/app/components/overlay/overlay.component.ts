@@ -58,6 +58,7 @@ export class OverlayComponent implements OnInit {
     let seq = _seq;
     if (seq === 'start') {
       this.activate = false;
+      this.broadcaster.broadcast('noOverlay');
       return;
     }
     if (seq === 'restart') {

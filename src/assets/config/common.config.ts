@@ -17,7 +17,8 @@ export const config = {
     witnessDecay: 1
   },
   tankDisplayDelay: 2000,
-  witDisplayDelay: 4000,
+  witDisplayDelay: 3000,
+  tesDisplayDelay: 900,
   maxElem: 4,
 
   audio: {
