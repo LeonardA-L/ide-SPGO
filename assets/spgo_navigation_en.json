@@ -54,9 +54,9 @@
     "tags": [
       ""
     ],
-    "content": "On the front door of the mansion, head of police Régine Martineau impatiently awaits, next to a large wall covered with objects, apparently the artist's latest work.\\n\\n\\n\\n 'Thank you for your cooperation. Thanks to this letter, maybe we will solve this puzzle.\\n\\nOn a more worrying note: Bourdy's ex-wife disappeared last night.\\n\\n\\n\\nLook at this wall: I walked around the property, and it seems that the objects displayed here represent Bourdy's domain. Everything corresponds, the poppies next to the entrance, the well, the almond tree in the center of the garden, the lake, and the woods at the border of the property. Every other object remains a mystery, though.\\n\\n\\n\\n **Your task** will be to pick 4 objects on this wall that seem to be the most relevant to you from what you hear from the witnesses I gathered. It should help us with the investigation.' [[Continue->Oxygène]]",
+    "content": "At the front gate of the mansion, head of police Régine Martineau impatiently awaits, next to a large wall covered with objects, apparently the artist's latest work.\\n\\n\\n\\n 'Thank you for your cooperation. Thanks to this letter, maybe we will solve this puzzle.\\n\\nOn a more worrying note: Bourdy's ex-wife disappeared last night.\\n\\n\\n\\nLook at this wall: I walked around the property, and it seems that the objects displayed here represent Bourdy's domain. Everything corresponds, the poppies next to the entrance, the well, the almond tree in the center of the garden, the lake, and the woods at the border of the property. Every other object remains a mystery, though.\\n\\n\\n\\n **Your task** will be to pick 4 objects on this wall that seem to be the most relevant to you from what you hear from the witnesses I gathered. It should help us with the investigation.' [[Continue->Oxygène]]",
     "childrenNames": [
-      "[[Continuer->Oxygène]]"
+      "[[Continue->Oxygène]]"
     ]
   },
   {
@@ -361,7 +361,7 @@
     "tags": [
       ""
     ],
-    "content": "Les équipes de la PJ plongent dans le lac et en ressortent un coffre. Dans celui-ci, le cadavre d'Adrien Bourdy repose près de bouteille d'oxygène vide. Il est mort asphyxié. Quelques jours après, dans le Parisien, un article explique l'arrestation de l'ex-femme de Monsieur Bourdy, qui l'a poussé et aidé à monter cette mise en scène. Ayant pris peur devant l'énormité de son oeuvre ultime, elle a décidé de fuir en le laissant à une mort certaine. Vous, vous savez que cette mort, vous auriez pu l'éviter.",
+    "content": "The police team dives into the lake and extracts a large chest. Inside, the corpse of Adrien Bourdy rests, next to empty bottles of oxygen. He died of asphyxia. A few days later, a news article published in *Le Parisien*, tells about the arrest of Bourdy's ex-wife, who pushed him to commit this performance and even helped stage it. Scared by the possible result of her actions, she then fled, leaving the artist to a his death.\\n\\nYou, however, know you could have avoided it. ",
     "childrenNames": []
   },
   {
@@ -374,7 +374,7 @@
     "tags": [
       ""
     ],
-    "content": "Vous avez réussi à trouver l'emplacement du Chef d'Oeuvre avant le temps imparti, les équipes de la PJ plongent dans le lac et ressortent un coffre. Dans celui-ci : monsieur Bourdy frigorifié tète une bouteille d'oxygène en regardant autour de lui. Ses premiers mots sont pour vous : “Merci cher inconnu, vous venez de me délivrer d'une mort certaine dans laquelle je me suis jeté à dessein. C'était mon Chef d’Oeuvre, laisser ma vie entre les mains du public et du destin. Je suis sûr que tout le monde se souviendra de cette performance artistique.” Quelques jours après, un article assassin apparaît dans *Libération*, “L’échec de Bourdy ou l’art dépassé” expliquant les névroses de l'artiste contemporain narcissique. L’auteure en est son ex-femme. ",
+    "content": "You managed to find the Masterpiece on time. The police team dives in the water and extracts a large chest. Inside, Adrien Bourdy, sucks on an oxygen bottle. His first words are for you.\\n\\n 'Thank you, dear stranger, for rescuing me from a certain death. It was my Masterpiece, leave my life in the hands of the public and destiny. I'm sure everyone will remember this performance.'\\n\\n\\n\\n A few days later, a news article is published in *Libération*, titled *'The Scam of Bourdy, a failed attempt at a come-back'* explaining the flaws of this narcissist morden artist. The author of the article is Bourdy's ex-wife.",
     "childrenNames": []
   },
   {

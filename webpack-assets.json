@@ -3,10 +3,10 @@
     "js": "/ide-SPGO/vendor.0283e7afe042735d365e.bundle.js"
   },
   "main": {
-    "js": "/ide-SPGO/main.590c93785b6bd44d16bc.bundle.js",
+    "js": "/ide-SPGO/main.009d95aea90f9f58a859.bundle.js",
     "css": "/ide-SPGO/main.5944cd42e9c02a4ed705dbbd66fed6e4.css"
   },
   "polyfills": {
-    "js": "/ide-SPGO/polyfills.f9a75fe1853c4189de10.bundle.js"
+    "js": "/ide-SPGO/polyfills.c319afe51da674a75789.bundle.js"
   }
 }
