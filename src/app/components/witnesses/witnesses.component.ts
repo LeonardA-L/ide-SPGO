@@ -37,7 +37,7 @@ export class WitnessesComponent {
     const compo = this;
     this.broadcaster.on<any>('testimony').subscribe((event) => compo.testimony(event));
     this.broadcaster.on<any>('init').subscribe((event) => compo.init());
-    this.broadcaster.on<any>('hideUI').subscribe((event) => compo.hideUI());
+    this.broadcaster.on<any>('victory').subscribe((event) => compo.hideUI());
   }
 
   public init() {
