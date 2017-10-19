@@ -5,7 +5,7 @@
     </div>
   </div>
   <div class="oxygen-tank">
-    <div class="oxygen-wrapper" *ngIf="displayOxygen">
+    <div class="oxygen-wrapper" [ngClass]="{hide: !displayOxygen}">
       <div class="decorator">
         <span class="img start"></span>
         <span class="img mid"></span>

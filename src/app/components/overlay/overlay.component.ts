@@ -8,6 +8,7 @@ import {
 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { trigger, transition, style, animate, state } from '@angular/animations';
 
 import { AppState } from '../../app.service';
 
@@ -24,6 +25,24 @@ import { CONFIG } from '../../environment';
   encapsulation: ViewEncapsulation.None,
   templateUrl: 'overlay.html',
   styleUrls: ['overlay.scss'],
+  animations: [
+    trigger(
+      'hubFade',
+      [
+        transition(
+        ':enter', [
+          style({opacity: 0}),
+          animate('500ms', style({opacity: 1}))
+        ]
+      ),
+      transition(
+        ':leave', [
+          style({opacity: 1}),
+          animate('500ms', style({opacity: 0}))
+        ]
+      )]
+    )
+  ],
 })
 export class OverlayComponent implements OnInit {
   public currentSequence: string;

@@ -15,9 +15,14 @@ hud {
     $oxH: 60px;
 
     .oxygen-wrapper {
+      transition: opacity $medium;
       height: $oxH;
       margin-top: calc((#{($appHeight - $wallHeight)} - #{$oxH}) / 2);
       position: relative;
+      opacity: 1;
+    }
+    .hide {
+      opacity: 0;
     }
 
     .decorator {

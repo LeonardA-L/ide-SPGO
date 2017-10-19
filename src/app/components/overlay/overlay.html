@@ -1,4 +1,4 @@
-<div id="overlay" *ngIf="activate">
+<div id="overlay" *ngIf="activate" [@hubFade]="activate">
   <div class="page splash" *ngIf="!currentSequence">
     <div class="splashscreen"></div>
     <div class="hud">
