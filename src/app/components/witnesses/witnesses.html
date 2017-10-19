@@ -1,11 +1,11 @@
-<div class="witnesses-inner">
+<div class="witnesses-inner" [ngClass]="{hide: hide}">
   <div *ngIf="currentSequence" class="testimony">
     <markdown [data]="gameService.gameData[currentSequence].content"></markdown>
     <div class="choice-wrapper">
       <button [ngClass]="{read: choice.read}" *ngFor="let choice of gameService.gameData[currentSequence].childrenNames; let i = index" (click)="goSequence(choice.goal, i, choice)">{{choice.translate ? (choice.link | translate) : choice.link}}</button>
     </div>
   </div>
-  <div class="witness-selection" *ngIf="showWitnesses">
+  <div class="witness-selection" [ngClass]="{hide: !showWitnesses}">
     <div id="selection-wrapper">
       <div *ngFor="let wit of gameService.witnesses" class="witness" (click)="goSequence(wit.name, -1, false)" (mouseover)="setHover(wit.name)" (mouseleave)="setHover(null)">
         <img src="wit.picture" width="100%" />

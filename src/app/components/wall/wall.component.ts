@@ -79,6 +79,7 @@ export class WallComponent {
   public reset() {
     for (let e of this.elements) {
       e.selected = false;
+      e.hidden = e.hiddenOrig;
     }
   }
 

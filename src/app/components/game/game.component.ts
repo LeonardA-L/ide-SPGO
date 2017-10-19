@@ -53,6 +53,9 @@ export class GameComponent implements OnInit {
   }
 
   public pick(element: Element) {
+    if (this.gameService.gameState.victory) {
+      return;
+    }
     if (this.gameService.gameState.elements.length < this.maxElem) {
       this.gameService.gameState.elements.push(element);
       element.selected = true;
@@ -65,6 +68,9 @@ export class GameComponent implements OnInit {
   }
 
   public unpick(element: Element) {
+    if (this.gameService.gameState.victory) {
+      return;
+    }
     element.selected = false;
     for (let e in this.gameService.gameState.elements) {
       if (this.gameService.gameState.elements[e].id === element.id) {

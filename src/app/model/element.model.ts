@@ -10,6 +10,7 @@ export class Element {
   public clickThrough = false;
   public good = false;
   public hidden = false;
+  public hiddenOrig = false;
 
   constructor(_id, _img, _x, _x2, _y, _good?, _clickThrough?, _hidden?) {
     this.id = _id;
@@ -21,6 +22,7 @@ export class Element {
     this.clickThrough = _clickThrough;
     this.good = _good;
     this.hidden = _hidden;
+    this.hiddenOrig = _hidden;
   }
 
   public setSelected(newVal) {

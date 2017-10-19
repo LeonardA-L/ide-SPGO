@@ -7,6 +7,8 @@ witnesses {
 
   .witnesses-inner {
     padding: $UIMargin;
+    opacity: 1;
+    transition: opacity $slow;
 
     .witness-selection, .testimony, hud {
       background: $hudBG;
@@ -17,6 +19,8 @@ witnesses {
   #selection-wrapper {
     display: flex;
     justify-content: space-between;
+    opacity: 1;
+    transition: opacity $slow;
   }
 
   .witness-selection {
@@ -65,6 +69,10 @@ witnesses {
       margin: 10px auto;
       display: block;
     }
+  }
+  
+  .hide {
+    opacity: 0;
   }
 
 }

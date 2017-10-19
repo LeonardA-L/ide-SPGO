@@ -167,6 +167,7 @@ export class GameService {
     delay(1000)
     .then(() => {
       this.broadcaster.broadcast('showThread');
+      this.broadcaster.broadcast('hideUI');
       return delay(1000);
     })
     .then(() => {
