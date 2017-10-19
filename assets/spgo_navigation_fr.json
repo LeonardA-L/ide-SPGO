@@ -25,7 +25,7 @@
     "tags": [
       ""
     ],
-    "content": "Bonjour, vous ne me connaissez pas. Des années de travail artistique m'ont conduit à réaliser ma plus grande Oeuvre. Peu de personnes, sont capables d'appréhender la puissance de l'acte créateur qui se joue aujourd'hui. Pourtant j'y ai dédié ma vie. Je vous ai choisi au hasard, car le choc artistique que doit provoquer cette Oeuvre sera grandiose. Si vous êtes attentif à mon travail, mes passions et à mes objets fétiches, vous serez capable de trouver cette Oeuvre que j'ai cachée dans ma propriété. Il faut la trouver très rapidement, j'ai mis au point un dispositif qui va la détruire. Mais vous pouvez l'empêcher. En effet, cette Oeuvre est vivante et sa survie est entre vos mains. Dépêchez-vous, je pense que vous croiserez assez de personnes sur ma propriété pour avoir les réponses à vos questions...Trouvez l'Oeuvre ultime. J'ai un grain, je vous l'accorde, mais cela fait tout mon charme. Adieu. Adrien Bourdy  [[Se rendre sur la propriété->se rendre sur la propriété]]  [[Déchirer la lettre->la police vous embarque]]",
+    "content": "Bonjour,\\n\\n\\n\\nVous ne me connaissez pas. Des années de travail artistique m'ont conduit à réaliser ma plus grande Oeuvre. Peu de personnes, sont capables d'appréhender la puissance de l'acte créateur qui se joue aujourd'hui. Pourtant j'y ai dédié ma vie. Je vous ai choisi au hasard, car le choc artistique que doit provoquer cette Oeuvre sera grandiose.\\n\\nSi vous êtes attentif à mon travail, mes passions et à mes objets fétiches, vous serez capable de trouver cette Oeuvre que j'ai cachée dans ma propriété. Il faut la trouver très rapidement, j'ai mis au point un dispositif qui va la détruire. Mais vous pouvez l'empêcher. En effet, cette Oeuvre est vivante et sa survie est entre vos mains.\\n\\n\\n\\nDépêchez-vous, je pense que vous croiserez assez de personnes sur ma propriété pour avoir les réponses à vos questions...Trouvez l'Oeuvre ultime. J'ai un grain, je vous l'accorde, mais cela fait tout mon charme.\\n\\n\\n\\nAdieu.\\n\\nAdrien Bourdy  [[Se rendre sur la propriété->se rendre sur la propriété]]  [[Déchirer la lettre->la police vous embarque]]",
     "childrenNames": [
       "[[Se rendre sur la propriété->se rendre sur la propriété]]",
       "[[Déchirer la lettre->la police vous embarque]]"
@@ -54,7 +54,7 @@
     "tags": [
       ""
     ],
-    "content": "A l'entrée, la commissaire Régine Martineau vous attend avec impatience devant un grand mur chargé d’objets, qui semble être le dernier travail de l’artiste :\\n\\n'Merci pour votre collaboration grâce à ce courrier peut-etre pourrions nous résoudre cette énigme. Plus inquiétant : son ex-femme est introuvable depuis la nuit dernière.\\n\\nRegardez ce mur : j’ai fait le tour du domaine, et on dirait que les éléments affichés ici représentent une carte de la propriété. Tout correspond, on retrouve les coquelicots à l’entrée du manoir, son puits à droite, l’amandier qui trône dans le jardin, le lac , et le petit bosquet, mais les autres images restent un mystère.\\n\\n\\n\\n**Votre tâche**, c’est de sélectionner les 4 indices sur ce mur qui vous semblent les plus pertinents en interrogeant les témoins, ça devrait nous aider à faire avancer l’enquête.'  [[Continuer->Oxygène]]",
+    "content": "A l'entrée, la commissaire Régine Martineau vous attend avec impatience devant un grand mur chargé d’objets, qui semble être le dernier travail de l’artiste :\\n\\n\\n\\n'Merci pour votre collaboration, grâce à ce courrier peut-etre pourrons nous résoudre cette énigme.\\n\\nPlus inquiétant : l'ex-femme de Bourdy est introuvable depuis la nuit dernière.\\n\\n\\n\\nRegardez ce mur : j’ai fait le tour du domaine, et on dirait que les éléments affichés ici représentent une carte de la propriété. Tout correspond, on retrouve les coquelicots à l’entrée du manoir, son puits à droite, l’amandier qui trône dans le jardin, le lac , et le petit bosquet, mais les autres images restent un mystère.\\n\\n\\n\\n**Votre tâche**, c’est de sélectionner les 4 indices sur ce mur qui vous semblent les plus pertinents en interrogeant les témoins, ça devrait nous aider à faire avancer l’enquête.'  [[Continuer->Oxygène]]",
     "childrenNames": [
       "[[Continuer->Oxygène]]"
     ]
@@ -86,7 +86,7 @@
     "tags": [
       ""
     ],
-    "content": "Habillé d'un vieux costume élimé. cheveux mi-longs, gras et clairsemés. Un homme qui a négligé l'activité physique pendant des années et porte désormais un embonpoint et des varices. Sa seule coquetterie est une moustache splendide impeccablement redressée au fer. Il porte sur ses genoux un gros chat qui ronronne doucement. Il se lève difficilement et se déplace péniblement en claudiquant. \\n\\nJe suis rentré au service du père Jean-Charles Bourdy à 17 ans, “l'ancienne époque”. Hier, je n'ai rien remarqué de particulier. J'aimerais bien que vous nous aidiez à retrouver Mr Bourdy. Que puis-je vous dire? Monsieur aimait beaucoup ses vieilles charentaises, faire un petit tour sur le lac avec sa barque, ainsi que les promenades dans la forêt du domaine. Il était aussi épris des sciences occultes. [[parlez-moi de la barque->barque]] [[parlez-moi de la charentaise->charentaise]] [[parlez-moi de sciences occultes->occultes]] [[parlez-moi du bois->bois]]",
+    "content": "Je suis rentré au service du père Jean-Charles Bourdy à 17 ans, “l'ancienne époque”. Hier, je n'ai rien remarqué de particulier. J'aimerais bien que vous nous aidiez à retrouver Mr Bourdy. Que puis-je vous dire? Monsieur aimait beaucoup ses vieilles charentaises, faire un petit tour sur le lac avec sa barque, ainsi que les promenades dans la forêt du domaine. Il était aussi épris des sciences occultes. [[parlez-moi de la barque->barque]] [[parlez-moi de la charentaise->charentaise]] [[parlez-moi de sciences occultes->occultes]] [[parlez-moi du bois->bois]]",
     "childrenNames": [
       "[[parlez-moi de la barque->barque]]",
       "[[parlez-moi de la charentaise->charentaise]]",
@@ -104,12 +104,12 @@
     "tags": [
       ""
     ],
-    "content": "Howard Blackherring, le conservateur du musée, est un homme très mince, aux cheveux courts ébouriffés 'savamment négligés'. Il porte de grosses lunettes rondes non correctives à la monture très fine. Il a un look branché-pro-décontracté comprenant une sur-utilisation de couleurs unies moutardes, bordeaux ou bleu klein, et de chemises aux manches retroussées. Il veut absolument que vous retrouviez le Chef d’Oeuvre du maître et espère ainsi faire un gros coup dans sa profession.\\n\\n“Certes. Je vais vous exposer de manière concise les principales activités du maître. Avant tout c'est un passionné de la culture japonaise, c’est là-bas que je l’ai rencontré en faisant de la plongée sous-marine. Depuis ce moment, il s’est mis à exploiter la symbolique des chaînes, qu’il intègre désormais dans tous ses travaux, notamment ceux liées à la thématique du corps humain.”   [[parlez-moi du Japon->Seppuku]] [[parlez-moi de la plongée->Bouteilles]] [[parlez-moi des chaines->chaines]] [[parlez-moi du corps->corps]]",
+    "content": "Certes. Je vais vous exposer de manière concise les principales activités du maître. Avant tout c'est un passionné de la culture japonaise, c’est là-bas que je l’ai rencontré en faisant de la plongée sous-marine. Depuis ce moment, il s’est mis à exploiter la symbolique des chaînes, qu’il intègre désormais dans tous ses travaux, notamment ceux liées à la thématique du corps humain.  [[parlez-moi du Japon->Seppuku]] [[parlez-moi de la plongée->Bouteilles]] [[parlez-moi des chaines->chaines]] [[parlez-moi du corps humain->corps]]",
     "childrenNames": [
       "[[parlez-moi du Japon->Seppuku]]",
       "[[parlez-moi de la plongée->Bouteilles]]",
       "[[parlez-moi des chaines->chaines]]",
-      "[[parlez-moi du corps->corps]]"
+      "[[parlez-moi du corps humain->corps]]"
     ]
   },
   {
@@ -122,7 +122,7 @@
     "tags": [
       ""
     ],
-    "content": "Pauline est élancée, blonde aux cheveux longs, des yeux verts. elle porte une écharpe rouge, un béret et fume exclusivement au porte cigare.\\n\\n“Qui êtes-vous ? Je n'ai rien à vous dire, je ne vous connais pas.\\n\\nBon si vous y tenez, mon père aimait - entre autres choses - les amandes. Il cultivait son propre amandier près du manoir, là, derrière ! Il a une collection d’armes anciennes, qu'il entrepose dans son coffre. Et si vous voulez tout savoir, il avait une peur atroce de l'abandon … qu’il combattait par son intérêt pour Freud et la psychanalyse en général.”  [[parlez-moi du coffre->coffre]] [[parez-moi des amandes->amandes]] [[parlez-moi de l'abandon->psy]] [[parlez-moi des armes->armes]]",
+    "content": "Je n'ai rien à vous dire, je ne vous connais pas.\\n\\nBon si vous y tenez, mon père aimait - entre autres choses - les amandes. Il cultivait son propre amandier près du manoir, là, derrière ! Il a une collection d’armes anciennes, qu'il entrepose dans son coffre. Et si vous voulez tout savoir, il avait une peur atroce de l'abandon... qu’il combattait par son intérêt pour Freud et la psychanalyse en général. [[parlez-moi du coffre->coffre]] [[parez-moi des amandes->amandes]] [[parlez-moi de l'abandon->psy]] [[parlez-moi des armes->armes]]",
     "childrenNames": [
       "[[parlez-moi du coffre->coffre]]",
       "[[parez-moi des amandes->amandes]]",
@@ -302,8 +302,8 @@
   {
     "pid": 22,
     "position": {
-      "x": 196,
-      "y": 144
+      "x": 56,
+      "y": 142
     },
     "name": "carte au trésor",
     "tags": [
@@ -322,7 +322,7 @@
     "tags": [
       ""
     ],
-    "content": "Ces escarpins appartiennent à son ex-femme qui est portée disparue. Que font-ils ici? Bourdy et son ex-femme sont en très mauvais rapports. Pauline affirme que sa mère n'est jamais revenue au domaine depuis leur divorce. Il va falloir en apprendre plus...   ",
+    "content": "Ces escarpins appartiennent à son ex-femme qui est portée disparue. Que font-ils ici? Bourdy et son ex-femme sont en très mauvais rapports. Mlle Bourdy affirme que sa mère n'est jamais revenue au domaine depuis leur divorce. Il va falloir en apprendre plus...",
     "childrenNames": []
   },
   {
@@ -341,6 +341,19 @@
   {
     "pid": 25,
     "position": {
+      "x": 207,
+      "y": 140
+    },
+    "name": "empreintes",
+    "tags": [
+      ""
+    ],
+    "content": "J'ai un doute sur les énormes empreintes d'ours visibles à l'orée du bois. Mais je ne crois pas au Yéti et cela va encore nous mener sur une fausse piste. C'est ça le problème avec ces artistes. Tu vois des traces et en fait c'est un truc arty à la noix.",
+    "childrenNames": []
+  },
+  {
+    "pid": 26,
+    "position": {
       "x": 880,
       "y": 1164
     },
@@ -352,7 +365,7 @@
     "childrenNames": []
   },
   {
-    "pid": 26,
+    "pid": 27,
     "position": {
       "x": 1088,
       "y": 1156
@@ -365,7 +378,7 @@
     "childrenNames": []
   },
   {
-    "pid": 27,
+    "pid": 28,
     "position": {
       "x": 1000,
       "y": 825
@@ -374,7 +387,7 @@
     "tags": [
       ""
     ],
-    "content": "Soudain, Gérard Duvin, le majordome, arrive en claudiquant. 'Il semble que les bouteilles de plongée de Monsieur aient disparu.\\n\\n”Régine Martineau s'exclame “Alors c’est un compte à rebours, dépêchez-vous de résoudre l’énigme, j’ai un mauvais pressentiment. Allez interroger les témoins maintenant !”",
+    "content": "Soudain, Gérard Duvin, le majordome, arrive en claudiquant.\\n\\n'Il semble que les bouteilles de plongée de Monsieur aient disparu.'\\n\\nRégine Martineau s'exclame. 'Alors c’est un compte à rebours, dépêchez-vous de résoudre l’énigme, j’ai un mauvais pressentiment. Allez interroger les témoins maintenant !'",
     "childrenNames": []
   }
 ]
