@@ -8,7 +8,7 @@
   <div class="witness-selection" [ngClass]="{hide: !showWitnesses}">
     <div id="selection-wrapper">
       <div *ngFor="let wit of gameService.witnesses" class="witness" (click)="goSequence(wit.name, -1, false)" (mouseover)="setHover(wit.name)" (mouseleave)="setHover(null)">
-        <img src="wit.picture" width="100%" />
+        <img src="{{wit.picture}}" width="100%" />
       </div>
     </div>
     <p><span *ngIf="hoverName">{{hoverName + '.speakto' | translate}}</span>&nbsp;</p>

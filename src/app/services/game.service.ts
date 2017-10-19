@@ -14,19 +14,19 @@ export class GameService {
   public gameState: any;
   public witnesses = [{
       name: 'Régine',
-      picture: null
+      picture: CONFIG.root + '/assets/img/faces/REGINE.jpeg'
     },
     {
       name: 'Howard',
-      picture: null
+      picture: CONFIG.root + '/assets/img/faces/HOWARD.jpeg'
     },
     {
       name: 'Gérard',
-      picture: null
+      picture: CONFIG.root + '/assets/img/faces/GERARD.jpeg'
     },
     {
       name: 'Pauline',
-      picture: null
+      picture: CONFIG.root + '/assets/img/faces/PAULINE.jpeg'
     }];
   public json;
 
