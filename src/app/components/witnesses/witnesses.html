@@ -1,6 +1,6 @@
 <div class="witnesses-inner">
   <div *ngIf="currentSequence" class="testimony">
-    <p>{{gameService.gameData[currentSequence].content}}</p>
+    <markdown [data]="gameService.gameData[currentSequence].content"></markdown>
     <div class="choice-wrapper">
       <button [ngClass]="{read: choice.read}" *ngFor="let choice of gameService.gameData[currentSequence].childrenNames; let i = index" (click)="goSequence(choice.goal, i, choice)">{{choice.translate ? (choice.link | translate) : choice.link}}</button>
     </div>
