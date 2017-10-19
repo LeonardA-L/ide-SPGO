@@ -38,7 +38,6 @@ export class WallComponent {
     new Element(4, CONFIG.root + '/assets/img/elements/5_freud.png', 11.2, 31.6, 32.3),
     new Element(5, CONFIG.root + '/assets/img/elements/6_amandier.png', 29.4, 79.78, -13.5, true),
     new Element(6, CONFIG.root + '/assets/img/elements/7_coffre.png', 16.1, 21.2, 40.3),
-    new Element(7, CONFIG.root + '/assets/img/elements/8_centaure.png', 39.8, 70.0, 53.8),
     new Element(8, CONFIG.root + '/assets/img/elements/9_la_disparue.png', 21.7, 33.1, 2.0),
     new Element(9, CONFIG.root + '/assets/img/elements/10_photo_houdini.png', 32, 46, 4.5),
     new Element(2, CONFIG.root + '/assets/img/elements/3_chaines.png', 23.2, 40.1, 75.2, true),
@@ -49,6 +48,7 @@ export class WallComponent {
     new Element(15, CONFIG.root + '/assets/img/elements/16_peinture_puits.png', 78.6, 97.8, 4.3),
     new Element(16, CONFIG.root + '/assets/img/elements/17_escarpins.png', 85.6, 95.4, 29.5, true),
     new Element(17, CONFIG.root + '/assets/img/elements/18_croquis_manoir.png', 57, 76, 4.6, false, true),
+    new Element(7, CONFIG.root + '/assets/img/elements/8_centaure.png', 39.8, 70.0, 53.8),
     new Element(18, CONFIG.root + '/assets/img/elements/19_peinture_lac.png', 57, 84.6, 40.5, false, true),
     new Element(11, CONFIG.root + '/assets/img/elements/12_charentaises.png', 58.7, 72.7, 82.2, true),
 
@@ -112,12 +112,12 @@ export class WallComponent {
   }
 
   public glowFail() {
-    setTimeout(() => {
+    /* setTimeout(() => {
       this.failure = true;
       setTimeout(() => {
         this.failure = false;
       }, 1000);
-    }, 300);
+    }, 300);*/
   }
 
 }

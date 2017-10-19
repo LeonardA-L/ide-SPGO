@@ -78,5 +78,8 @@ hud {
 
       @include drop-shadow($elemHover);
     }
+    .element.fail {
+      @include drop-shadow($elemFail);
+    }
   }
 }

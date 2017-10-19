@@ -29,6 +29,7 @@ export class WitnessesComponent {
   public showWitnesses = false;
   public showTestimony = false;
   public hide = false;
+  public selected = undefined;
 
   constructor(
     public appState: AppState,
@@ -61,6 +62,11 @@ export class WitnessesComponent {
     }
     this.currentSequence = seq;
     this.broadcaster.broadcast('testimony', seq);
+  }
+
+  public pickWitness(name) {
+    this.selected = name;
+    this.goSequence(name, -1, false);
   }
 
   public setHover(name) {

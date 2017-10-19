@@ -7,7 +7,7 @@
   </div>
   <div class="witness-selection" [ngClass]="{hide: !showWitnesses}">
     <div id="selection-wrapper">
-      <div *ngFor="let wit of gameService.witnesses" class="witness" (click)="goSequence(wit.name, -1, false)" (mouseover)="setHover(wit.name)" (mouseleave)="setHover(null)">
+      <div *ngFor="let wit of gameService.witnesses" class="witness" (click)="pickWitness(wit.name)" (mouseover)="setHover(wit.name)" (mouseleave)="setHover(null)" [ngClass]="{selected: wit.name === selected}">
         <img src="{{wit.picture}}" width="100%" />
       </div>
     </div>

@@ -1,6 +1,6 @@
 <div id="hud">
   <div class="inventory">
-    <div *ngFor="let elem of gameService.gameState.elements" class="element" (click)="unpickElem(elem)">
+    <div *ngFor="let elem of gameService.gameState.elements" class="element" (click)="unpickElem(elem)" [ngClass]="{fail: failure}">
       <img [src]="elem.img" width="80%"/>
     </div>
   </div>

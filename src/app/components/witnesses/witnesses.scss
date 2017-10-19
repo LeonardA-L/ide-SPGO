@@ -45,8 +45,9 @@ witnesses {
     cursor: pointer;
     flex: 1;
     display: inline-block;
-    background: #FFF;
     max-width: $witSize;
+    max-height: $witSize;
+    transition: box-shadow $fast;
   }
 
   .testimony {
@@ -75,6 +76,11 @@ witnesses {
   
   .hide {
     opacity: 0;
+  }
+
+
+  .selected {
+    box-shadow: 0px 0px 28px 1px #00A4FF;
   }
 
 }

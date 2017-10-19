@@ -30,6 +30,7 @@ import { Element } from '../../model/element.model';
 })
 export class HudComponent implements OnInit {
   public displayOxygen = false;
+  public failure = false;
 
   @Output()
   private unpick = new EventEmitter();
@@ -42,6 +43,7 @@ export class HudComponent implements OnInit {
     const compo = this;
     this.broadcaster.on<any>('init').subscribe((event) => compo.init());
     this.broadcaster.on<any>('testimony').subscribe((event) => compo.testimony(event));
+    this.broadcaster.on<any>('failure').subscribe((event) => compo.glowFail());
   }
 
   public ngOnInit() {
@@ -66,6 +68,38 @@ export class HudComponent implements OnInit {
     if (elem.selected) {
       this.unpick.next(elem);
     }
+  }
+
+  public glowFail() {
+    setTimeout(() => {
+      this.failure = true;
+      setTimeout(() => {
+        this.failure = false;
+      }, 1000);
+    }, 300);
+
+    function delay(t) {
+      return new Promise((resolve) => {
+        setTimeout(resolve, t);
+      });
+    }
+
+    delay(300)
+    .then(() => {
+      this.failure = true;
+      return delay(1000);
+    })
+    .then(() => {
+      this.failure = false;
+      return delay(800);
+    })
+    .then(() => {
+      this.failure = true;
+      return delay(1000);
+    })
+    .then(() => {
+      this.failure = false;
+    });
   }
 
 }
