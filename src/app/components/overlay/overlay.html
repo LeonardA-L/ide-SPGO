@@ -1,9 +1,9 @@
 <div id="overlay" *ngIf="activate">
-  <div *ngIf="!currentSequence">
-    <h1>{{'title' | translate}}</h1>
-    <div>
+  <div class="page splash" *ngIf="!currentSequence">
+    <div class="splashscreen"></div>
+    <div class="hud">
       <button (click)="startGame()">Start</button>
-      <div><span (click)="changeLang('fr')">fr</span> | <span (click)="changeLang('en')">en</span></div>
+      <div class="lang"><span (click)="changeLang('fr')">fr</span> | <span (click)="changeLang('en')">en</span></div>
     </div>
   </div>
   <div *ngIf="currentSequence" class="page">

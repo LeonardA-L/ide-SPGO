@@ -1,8 +1,9 @@
 <div id="elements-wrapper">
   <div *ngFor="let elem of elements" class="element"
     [style.left]="elem.left" [style.top]="elem.top" [style.width]="elem.width"
-    [ngClass]="{selected: elem.selected, correct: elem.good && gameService.gameState.victory, clickthrough: elem.clickThrough, hidden: elem.hidden}"
+    [ngClass]="{selected: elem.selected, correct: elem.good && gameService.gameState.victory, clickthrough: elem.clickThrough, hidden: elem.hidden, fail: elem.selected && failure}"
     (click)="pickElement(elem)">
       <img [src]="elem.img" width="100%"/>
-    </div>
+  </div>
 </div>
+<div *ngIf="!enable" class="elements-hider"></div>

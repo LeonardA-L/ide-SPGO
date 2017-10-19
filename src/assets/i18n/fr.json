@@ -5,18 +5,18 @@
 
   "Régine": {
     "backto": "Retour à Régine",
-    "speakto": "Parler à Régine Martineau"
+    "speakto": "Régine Martineau, la Commissaire"
   },
   "Pauline": {
     "backto": "Retour à Pauline",
-    "speakto": "Parler à Pauline Bourdy"
+    "speakto": "Pauline Bourdy, la fille de l'artiste"
   },
   "Gérard": {
     "backto": "Retour à Gérard",
-    "speakto": "Parler à Gérard Duvin"
+    "speakto": "Gérard Duvin, le Marjordome"
   },
   "Howard": {
     "backto": "Retour à Howard",
-    "speakto": "Parler à Howard Blackherring"
+    "speakto": "Howard Blackherring, le Conservateur"
   }
 }

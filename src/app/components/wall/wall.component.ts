@@ -29,9 +29,11 @@ import { CONFIG } from '../../environment';
   styleUrls: ['wall.scss'],
 })
 export class WallComponent {
+  public enable = false;
+  public failure = false;
   public elements: Element[] = [
     new Element(0, CONFIG.root + '/assets/img/elements/1_poster_chiromancie.png', 86, 96.4, 63.3),
-    new Element(1, CONFIG.root + '/assets/img/elements/2_peinture_foret.png', 3, 42.2, 57.5),
+    new Element(1, CONFIG.root + '/assets/img/elements/2_peinture_foret.png', 3, 42.2, 57.5, false, true),
     new Element(3, CONFIG.root + '/assets/img/elements/4_fil_rouge.png', 9.3, 93.2, 11.7, false, true),
     new Element(4, CONFIG.root + '/assets/img/elements/5_freud.png', 11.2, 31.6, 32.3),
     new Element(5, CONFIG.root + '/assets/img/elements/6_amandier.png', 29.4, 79.78, -13.5, true),
@@ -46,8 +48,8 @@ export class WallComponent {
     new Element(14, CONFIG.root + '/assets/img/elements/15_harakiri.png', 69.6, 87.2, 29.4),
     new Element(15, CONFIG.root + '/assets/img/elements/16_peinture_puits.png', 78.6, 97.8, 4.3),
     new Element(16, CONFIG.root + '/assets/img/elements/17_escarpins.png', 85.6, 95.4, 29.5, true),
-    new Element(17, CONFIG.root + '/assets/img/elements/18_croquis_manoir.png', 57, 76, 4.6),
-    new Element(18, CONFIG.root + '/assets/img/elements/19_peinture_lac.png', 57, 84.6, 40.5),
+    new Element(17, CONFIG.root + '/assets/img/elements/18_croquis_manoir.png', 57, 76, 4.6, false, true),
+    new Element(18, CONFIG.root + '/assets/img/elements/19_peinture_lac.png', 57, 84.6, 40.5, false, true),
     new Element(11, CONFIG.root + '/assets/img/elements/12_charentaises.png', 58.7, 72.7, 82.2, true),
 
     new Element(19, CONFIG.root + '/assets/img/elements/FIL1.png', 51.9, 70.0, 29.5, false, true, true),
@@ -74,6 +76,8 @@ export class WallComponent {
     const compo = this;
     this.broadcaster.on<any>('init').subscribe((event) => compo.reset());
     this.broadcaster.on<any>('showThread').subscribe((event) => compo.showThread());
+    this.broadcaster.on<any>('testimony').subscribe((event) => compo.enablePick(event));
+    this.broadcaster.on<any>('failure').subscribe((event) => compo.glowFail());
   }
 
   public reset() {
@@ -98,6 +102,22 @@ export class WallComponent {
         break;
       }
     }
+  }
+
+  public enablePick(event) {
+    const seq = this.gameService.gameData[event];
+    if (seq.name === 'Oxygène' || seq.name === 'Bouteilles') {
+      this.enable = true;
+    }
+  }
+
+  public glowFail() {
+    setTimeout(() => {
+      this.failure = true;
+      setTimeout(() => {
+        this.failure = false;
+      }, 1000);
+    }, 300);
   }
 
 }

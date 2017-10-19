@@ -83,6 +83,8 @@ export class GameService {
       this.gameState.victory = true;
       this.broadcaster.broadcast('victory', this.gameState.oxygen > 0);
       this.victory();
+    } else {
+      this.broadcaster.broadcast('failure');
     }
   }
 
