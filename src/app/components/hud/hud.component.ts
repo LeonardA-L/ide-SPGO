@@ -71,31 +71,24 @@ export class HudComponent implements OnInit {
   }
 
   public glowFail() {
-    setTimeout(() => {
-      this.failure = true;
-      setTimeout(() => {
-        this.failure = false;
-      }, 1000);
-    }, 300);
-
     function delay(t) {
       return new Promise((resolve) => {
         setTimeout(resolve, t);
       });
     }
 
-    delay(300)
+    delay(100)
     .then(() => {
       this.failure = true;
       return delay(500);
     })
     .then(() => {
       this.failure = false;
-      return delay(800);
+      return delay(500);
     })
     .then(() => {
       this.failure = true;
-      return delay(1000);
+      return delay(500);
     })
     .then(() => {
       this.failure = false;

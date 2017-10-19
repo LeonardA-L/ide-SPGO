@@ -7,11 +7,13 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 import { AppState } from '../../app.service';
 
 import { Broadcaster } from '../../services/broadcast.service';
 import { GameService } from '../../services/game.service';
+import { CONFIG } from '../../environment';
 
 /*
  * App Component
@@ -27,10 +29,13 @@ export class OverlayComponent implements OnInit {
   public currentSequence: string;
 
   public activate = true;
+  public letter = 'Lire la lettre';
+  public letterAsset = CONFIG.root + '/assets/img/LetterBourdy_' + this.translate.getDefaultLang() + '.png';
 
   constructor(
     public appState: AppState,
     private broadcaster: Broadcaster,
+    public translate: TranslateService,
     public gameService: GameService,
   ) {
     const compo = this;

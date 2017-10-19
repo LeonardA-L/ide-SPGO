@@ -19,6 +19,14 @@
     text-align: justify;
   }
 
+  .letter {
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    width: 60%;
+    max-width: unset;
+    height: 60vh;
+  }
+
   .splashscreen {
     background: url('../../../assets/img/splashscreen.png') no-repeat;
     background-size: 100%;
