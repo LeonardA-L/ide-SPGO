@@ -46,22 +46,27 @@ hud {
     }
 
     .gauge {
-      transition: width $medium, background-color $medium;
-      background: $fullgauge;
       z-index: 1;
       position: absolute;
       top: 5px;
       left: 6px;
-      width: 50%;
+      width: calc(100% - 13px - 45px);
       height: 86%;
-    }
-    .danger {
-      background: $dangergauge;
+
+      .inner {
+        transition: width $medium, background-color $medium;
+        background: $fullgauge;
+        width: 100%;
+        height: 100%;
+      }
+      .danger {
+        background: $dangergauge;
+      }
     }
   }
 
   .inventory {
-    flex: 3.5;
+    flex: 3.0;
     line-height: ($appHeight - $wallHeight);
     vertical-align: middle;
 

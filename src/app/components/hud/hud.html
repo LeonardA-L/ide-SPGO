@@ -11,7 +11,9 @@
         <span class="img mid"></span>
         <span class="img end"></span>
       </div>
-      <div class="gauge" [style.width]="gameService.gameState.oxygen + '%'" [ngClass]="{danger: gameService.gameState.oxygen < 30}"></div>
+      <div class="gauge">
+        <div class="inner" [style.width]="gameService.gameState.oxygen + '%'" [ngClass]="{danger: gameService.gameState.oxygen < 40}"></div>
+      </div>
     </div>
   </div>
 </div>

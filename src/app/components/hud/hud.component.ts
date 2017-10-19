@@ -54,7 +54,7 @@ export class HudComponent implements OnInit {
 
   public testimony(event) {
     const seq = this.gameService.gameData[event];
-    if (seq.name === 'Oxygène') {
+    if (seq.name === 'Oxygène'  || seq.name === 'Bouteilles') {
       const compo = this;
       setTimeout(() => {
         compo.displayOxygen = true;
