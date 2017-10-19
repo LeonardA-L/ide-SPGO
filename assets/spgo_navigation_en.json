@@ -9,7 +9,7 @@
     "tags": [
       ""
     ],
-    "content": "Vous **recevez** *un* appel du commissariat central.\n\nUn grand artiste a disparu dans la nuit, en ne laissant pour seul indice qu'une lettre qui vous est adressée. [[Lire la lettre->Lire la lettre]]  [[ne pas lire la lettre->ne pas lire la lettre]]",
+    "content": "Un matin pourtant ordinaire, vous recevez sur votre paillasson une lettre sans cachet de la poste. La vieille enveloppe en papier épais est scellée à la cire. [[Lire la lettre->Lire la lettre]]  [[ne pas lire la lettre->ne pas lire la lettre]]",
     "childrenNames": [
       "[[Lire la lettre->Lire la lettre]]",
       "[[ne pas lire la lettre->ne pas lire la lettre]]"
@@ -18,14 +18,14 @@
   {
     "pid": 2,
     "position": {
-      "x": 997,
-      "y": 562
+      "x": 1000,
+      "y": 550
     },
     "name": "Lire la lettre",
     "tags": [
       ""
     ],
-    "content": "Bonjour cher(e) ami(e), des années de travail artistique m'ont conduit à réaliser ma plus grande Oeuvre. Peu de personnes, en fait personne sur terre n'est capable d'appréhender la puissance de l'acte créateur qui se joue aujourd'hui. Personne sauf vous qui êtes pris de force à jouer à ce jeu. Tel l'enfant niezschéen, je vous propose de relancer les dés et de remettre en cause l'ensemble des valeurs qui sont établies en ce monde. Si vous êtes attentif à mon travail et à mes petites habitudes de vie, vous serez capable de trouver cette Oeuvre que j'ai cachée dans ma propriété. Il faut la trouver rapidement, j'ai mis au point un dispositif qui risque de la détruire. En effet, cette Oeuvre est vivante et sa survie est entre vos mains. Dépêchez-vous, je pense que vous croiserez assez de personnes sur ma propriété pour avoir les réponses à vos questions... Les bonnes réponses reportées sur mon dernier tableau vous permettront de trouver l'Oeuvre Ultime. J'ai un grain je vous l'accorde, mais cela fait tout mon charme. Adieu. Adrien Bourdy [[Se rendre sur la propriété->se rendre sur la propriété]]  [[Déchirer la lettre->la police vous embarque]]",
+    "content": "Bonjour cher(e) ami(e), des années de travail artistique m'ont conduit à réaliser ma plus grande Oeuvre. Peu de personnes, sont capables d'appréhender la puissance de l'acte créateur qui se joue aujourd'hui. Vous êtes pris de force à jouer à ce jeu. Je vous propose de relancer les dés et de remettre en cause l'ensemble des valeurs qui sont établies en ce monde. Si vous êtes attentif à mon travail, mes passions et à mes objets fétiches, vous serez capable de trouver cette Oeuvre que j'ai cachée dans ma propriété. Il faut la trouver rapidement, j'ai mis au point un dispositif qui risque de la détruire. En effet, cette Oeuvre est vivante et sa survie est entre vos mains. Dépêchez-vous, je pense que vous croiserez assez de personnes sur ma propriété pour avoir les réponses à vos questions...Trouvez l'Oeuvre ultime. J'ai un grain, je vous l'accorde, mais cela fait tout mon charme. Adieu. Adrien Bourdy  [[Se rendre sur la propriété->se rendre sur la propriété]]  [[Déchirer la lettre->la police vous embarque]]",
     "childrenNames": [
       "[[Se rendre sur la propriété->se rendre sur la propriété]]",
       "[[Déchirer la lettre->la police vous embarque]]"
@@ -41,25 +41,22 @@
     "tags": [
       ""
     ],
-    "content": "Mauvaise réponse : Je vous invite à lire un extrait de Qu'est-ce que s'orienter dans la pensée d'Emmanuel Kant L’ignorance est donc en soi la cause des limites, mais non des erreurs dans notre connaissance. Mais partout où il ne dépend pas autant de nous de vouloir ou de ne vouloir pas juger déterminément de quelque chose, partout où existe un besoin réel de juger, un besoin inhérent à la raison même, et où cependant le défaut de savoir par rapport à ce qui est nécessaire pour juger, nous limite, là aussi est nécessairement une maxime d’après laquelle nous devons porter notre jugement ; car la raison veut être satisfaite. Si donc il a déjà été décidé qu’il ne peut y avoir ici aucune intuition d’objet, pas même quelque chose qui y ressemble, et à l’aide de quoi nous puissions opposer aux notions étendues un objet qui soit d’accord avec elles, et par là nous assurer de leur vérité par leur réalité possible ; alors nous n’aurons plus qu’à bien examiner la notion avec laquelle nous voulons nous aventurer au delà de toute expérience possible, afin d’être sûr qu’elle est exempte de toute contradiction, et de soumettre du moins le rapport de l’objet avec les objets de l’expérience aux notions pures de l’entendement, non pas pour le rendre sensible, mais cependant pour concevoir quelque chose de sursensible, d’une manière au moins compatible avec l'usage expérimental de notre raison ; car sans cette précaution nous ne pourrions faire aucun usage de cette notion, et nous délirerions au lieu de penser.",
+    "content": "Deux semaines après, la police vous embarque pour complicité de meurtre. Parfois, La curiosité est un bon défaut.",
     "childrenNames": []
   },
   {
     "pid": 4,
     "position": {
-      "x": 992,
-      "y": 688
+      "x": 1000,
+      "y": 700
     },
     "name": "se rendre sur la propriété",
     "tags": [
       ""
     ],
-    "content": "A l'entrée, la commissaire Régine Martineau nous attend avec impatience. Je ne sais pas pourquoi Adrien Bourdy vous a écrit, vous êtes pour l'instant un suspect de mon point de vue. Il va falloir que vous nous aidiez et que vous prouviez la raison de votre présence ou je vous coffre. Il y a eu deux disparitions, une femme a disparu dans les environs la nuit dernière. Adrien Bourdy a laissé un mode d'emploi. Il faut trouver des indices dans son tableau. Vu que son tableau représente sa propriété, nous allons tenter une triangularisation. Trouvez-moi ces 4 indices, sinon je donne pas cher de votre peau. Vous vous retrouvez dans une énorme propriété bourgeoise, où se trouve un manoir, un bois, un petit lac et un corps de ferme qui lui servait d'atelier d'après les sculptures qui gisent à même le sol ou pendues aux arbres avec des bois de cerfs et autres massacres. Monsieur Bourdy était un artiste qui aimait le travail des matériaux bruts, il aimait le corps et les collages. Son majordome Gérard Duvin, nous emmène face au dernier tableau sur lequel travaillait le maître, sur place, face à l'Oeuvre nous rencontrons Howard Blackherring conservateur au musée et responsable de la dernière exposition de l'artiste. Pauline Bourdy, la fille de l'artiste est présente aussi. Le tableau est un amas hétéroclite d'éléments collés les uns sur les autres, avec pour titre Héraclite. [[parler à Régine Martineau->Régine]] [[parler à Gérard Duvin->Gérard]] [[parler à Howard Blackherring->Howard]] [[parler à Pauline Bourdy->Pauline]]",
+    "content": "A l'entrée, la commissaire Régine Martineau vous attend avec impatience devant un grand mur chargé d’objets, qui semble être le dernier travail de l’artiste :\\n\\n'Vous êtes pour l'instant la seule personne capable de répondre à cette énigme d’après Adrien Bourdy, qui vous a écrit. Prouvez-moi votre utilité en trouvant son Chef d’Oeuvre. Il y a eu une autre disparition dans les environs, son ex-femme est introuvable depuis la nuit dernière.\\n\\nRegardez ce mur : j’ai fait le tour du domaine, et on dirait que les éléments affichés ici représentent une carte de la propriété : des coquelicots à l’entrée, le manoir et son puits à droite, l’amandier qui trône dans le jardin, le lac en bas à droite, et le petit bosquet en bas à gauche.\\n\\n**Votre tâche**, c’est de sélectionner les 4 indices sur ce mur qui vous semblent les plus pertinents en interrogeant les témoins, ça devrait nous aider à faire avancer l’enquête.'  [[Continuer->Oxygène]]",
     "childrenNames": [
-      "[[parler à Régine Martineau->Régine]]",
-      "[[parler à Gérard Duvin->Gérard]]",
-      "[[parler à Howard Blackherring->Howard]]",
-      "[[parler à Pauline Bourdy->Pauline]]"
+      "[[Continuer->Oxygène]]"
     ]
   },
   {
@@ -72,7 +69,7 @@
     "tags": [
       ""
     ],
-    "content": "Ecoutez-moi bien, je m'en contrefous de l'art contemporain, mais j'ai sur les bras la disparition d'un homme et d'une femme. Et vous, vous êtes pour l'instant mon unique suspect. J'ai trouvé un escarpin et une carte au trésor d'artiste attardé en arrivant ici et il n'y pas de café dans ce manoir à la noix. Une femme a disparu et il y a des empreintes d'ours près du bois. Moi ce que j'en dis de l'art... Enfin regardez le tableau, il vous a sûrement pas écrit par hasard. [[parlez-moi de la femme disparue->disparue]] [[parlez-moi de la carte au trésor->carte au trésor]] [[parlez-moi de l'escarpin->escarpin]] [[parlez-moi des empreintes d'ours->empreintes]]",
+    "content": "Ecoutez-moi bien, je m'en contrefous de l'art contemporain, mais j'ai sur les bras la disparition d'un homme et d'une femme. Et vous, vous êtes pour l'instant mon unique suspect. Ce mur ressemble vachement à une carte au trésor d’artiste en manque d’attention. J'ai trouvé un escarpin près du puits, une femme à disparu et il y a des empreintes d’ours près du bois. Une femme a disparu et il n’y a même pas de café dans ce manoir à la noix. Moi, ce qu’ j’en dis de l’art contemporain … Enfin regardez le tableau, il ne vous a sûrement pas écrit par hasard. [[parlez-moi de la femme disparue->disparue]] [[parlez-moi de la carte au trésor->carte au trésor]] [[parlez-moi de l'escarpin->escarpin]] [[parlez-moi des empreintes d'ours->empreintes]]",
     "childrenNames": [
       "[[parlez-moi de la femme disparue->disparue]]",
       "[[parlez-moi de la carte au trésor->carte au trésor]]",
@@ -90,7 +87,7 @@
     "tags": [
       ""
     ],
-    "content": "Habillé d'un vieux costume élimé. cheveux mi-longs, gras et clairsemés. Un homme qui a négligé l'activité physique pendant des années et porte désormais un embompoint et des varices. Sa seule coquetterie étant une moustache splendide impeccablement redressée au fer à moustache. Il porte sur ses genoux un gros chat qui ronronne doucement. Il se lève difficilement et se déplace péniblement en claudiquant. Je suis rentré au service du père Jean-Charles Bourdy à 17 ans, 'l'ancienne époque'. Hier, je n'ai rien remarqué de particulier. J'aimerais bien que vous nous aidiez à retrouver Mr Bourdy. Mr Bourdy aimait ses charentaises, sa barque, les sciences occultes, la forêt. [[parlez-moi de la barque->barque]] [[parlez-moi de la charentaise->charentaise]] [[parlez-moi de sciences occultes->occultes]] [[parlez-moi du bois->bois]]",
+    "content": "Habillé d'un vieux costume élimé. cheveux mi-longs, gras et clairsemés. Un homme qui a négligé l'activité physique pendant des années et porte désormais un embonpoint et des varices. Sa seule coquetterie est une moustache splendide impeccablement redressée au fer. Il porte sur ses genoux un gros chat qui ronronne doucement. Il se lève difficilement et se déplace péniblement en claudiquant. \\n\\nJe suis rentré au service du père Jean-Charles Bourdy à 17 ans, “l'ancienne époque”. Hier, je n'ai rien remarqué de particulier. J'aimerais bien que vous nous aidiez à retrouver Mr Bourdy. Que puis-je vous dire? Monsieur aimait beaucoup ses vieilles charentaises, faire un petit tour sur le lac avec sa barque, ainsi que les promenades dans la forêt du domaine. Il était aussi épris des sciences occultes. [[parlez-moi de la barque->barque]] [[parlez-moi de la charentaise->charentaise]] [[parlez-moi de sciences occultes->occultes]] [[parlez-moi du bois->bois]]",
     "childrenNames": [
       "[[parlez-moi de la barque->barque]]",
       "[[parlez-moi de la charentaise->charentaise]]",
@@ -108,7 +105,7 @@
     "tags": [
       ""
     ],
-    "content": "Howard est un homme très mince, aux cheveux courts ébourrifés 'savament négligés', il porte de grosses lunettes rondes non correctives à la monture très fine. Il a un look branché-pro-décontracté comprenant une sur-utilisation de couleurs unies moutardes, bordeaux ou bleu klein, et de chemises aux manches retroussées. Il veut absolument que vous retrouviez l'Oeuvre Ultime du maître et espère ainsi faire un gros coup. Certes, je vais vous exposer de manière concises les passions du maître. Avant tout c'est un passionné du Japon, de la plongée sous-marine, des chaînes et du travail sur le corps humain. [[parlez-moi du Japon->Seppuku]] [[parlez-moi de la plongée->Bouteilles]] [[parlez-moi des chaines->chaines]] [[parlez-moi du corps->corps]]",
+    "content": "Howard Blackherring, le conservateur du musée, est un homme très mince, aux cheveux courts ébouriffés 'savamment négligés'. Il porte de grosses lunettes rondes non correctives à la monture très fine. Il a un look branché-pro-décontracté comprenant une sur-utilisation de couleurs unies moutardes, bordeaux ou bleu klein, et de chemises aux manches retroussées. Il veut absolument que vous retrouviez le Chef d’Oeuvre du maître et espère ainsi faire un gros coup dans sa profession.\\n\\n“Certes. Je vais vous exposer de manière concise les principales activités du maître. Avant tout c'est un passionné de la culture japonaise, c’est là-bas que je l’ai rencontré en faisant de la plongée sous-marine. Depuis ce moment, il s’est mis à exploiter la symbolique des chaînes, qu’il intègre désormais dans tous ses travaux, notamment ceux liées à la thématique du corps humain.”   [[parlez-moi du Japon->Seppuku]] [[parlez-moi de la plongée->Bouteilles]] [[parlez-moi des chaines->chaines]] [[parlez-moi du corps->corps]]",
     "childrenNames": [
       "[[parlez-moi du Japon->Seppuku]]",
       "[[parlez-moi de la plongée->Bouteilles]]",
@@ -126,10 +123,10 @@
     "tags": [
       ""
     ],
-    "content": "Pauline est élancée, blonde aux cheveux longs,  des yeux verts. elle porte une écharpe rouge, un béret et fume exclusivement au porte cigare. Qui êtes-vous ? Je n'ai rien à vous dire, je ne vous connais pas. Bon si vous y tenez, mon père aimait les cerises, les armes, qu'il entreposait dans son coffre et il avait une peur phobique de l'abandon et donc passionné de Freud et de psychanalyse en général. coffre cerises abandon armes [[parlez-moi du coffre->coffre]] [[parez-moi des cerises->cerisiers]] [[parlez-moi de l'abandon->psy]] [[parlez-moi des armes->armes]]",
+    "content": "Pauline est élancée, blonde aux cheveux longs, des yeux verts. elle porte une écharpe rouge, un béret et fume exclusivement au porte cigare.\\n\\n“Qui êtes-vous ? Je n'ai rien à vous dire, je ne vous connais pas.\\n\\nBon si vous y tenez, mon père aimait - entre autres choses - les amandes. Il cultivait son propre amandier près du manoir, là, derrière ! Il a une collection d’armes anciennes, qu'il entrepose dans son coffre. Et si vous voulez tout savoir, il avait une peur atroce de l'abandon … qu’il combattait par son intérêt pour Freud et la psychanalyse en général.”  [[parlez-moi du coffre->coffre]] [[parez-moi des amandes->amandes]] [[parlez-moi de l'abandon->psy]] [[parlez-moi des armes->armes]]",
     "childrenNames": [
       "[[parlez-moi du coffre->coffre]]",
-      "[[parez-moi des cerises->cerisiers]]",
+      "[[parez-moi des amandes->amandes]]",
       "[[parlez-moi de l'abandon->psy]]",
       "[[parlez-moi des armes->armes]]"
     ]
@@ -144,7 +141,7 @@
     "tags": [
       ""
     ],
-    "content": "La barque a été débachée cette nuit, je ne sais pourquoi. Elle est pourtant encore accrochée au ponton,  Il aimait bien se promener sur le petit lac et faire la sieste sur cette barque.",
+    "content": "La barque a été débâchée cette nuit, je ne sais pourquoi. Elle est pourtant encore accrochée au ponton. Il aimait bien se promener sur le petit lac et faire la sieste sur cette barque, mais jamais de nuit.",
     "childrenNames": []
   },
   {
@@ -157,7 +154,7 @@
     "tags": [
       ""
     ],
-    "content": "Cette charentaise dans ma main, elle lui appartient, je l'ai trouvée au milieu du jardin. Tiens étrangement, au même endroit qu'indiqué sur le dernier tableau de Monsieur.",
+    "content": "Cette charentaise dans ma main, elle lui appartient, je l'ai trouvée à quelques mètres du lac. Tiens, étrangement, au même endroit qu'indiqué sur le mur de l’atelier de Monsieur, juste là.",
     "childrenNames": []
   },
   {
@@ -170,7 +167,7 @@
     "tags": [
       ""
     ],
-    "content": "Monsieur Bourdy était passionné de sciences occultes, il aimait faire tourner les verres sur la table, parler aux esprits, jouer les choses au hasard, car il ne croyait pas au hasard. Monsieur Bourdy était un visionnaire, voyez-vous ?",
+    "content": "Monsieur Bourdy s’essayait régulièrement aux sciences occultes, il aimait faire tourner les verres sur la table, parler aux esprits, tirer les tarots, discuter avec des voyants, des astrologues, des chiromanciens. Il voulait mettre toutes les chances de son côté, car il ne croyait pas au hasard. Monsieur Bourdy était un visionnaire, voyez-vous ?",
     "childrenNames": []
   },
   {
@@ -183,7 +180,7 @@
     "tags": [
       ""
     ],
-    "content": "Son endroit favori sur la propriété, ce sont les bois, à tous les coups, il passait son temps à revenir les pieds crottés sans aucune considération pour mon travail.",
+    "content": "Il allait souvent au bois, je ne sais pas ce qu’il y faisait. Je n’ai jamais trop osé me mêler de ses affaires, il y avait là quelque chose de… mystique. Il passait son temps à revenir les pieds crottés sans aucune considération pour mon travail.",
     "childrenNames": []
   },
   {
@@ -196,7 +193,7 @@
     "tags": [
       ""
     ],
-    "content": "Son coffre a disparu, il reste un endroit propre sans poussière. L'oisiveté de notre majordome a fait avancer cette enquête à sa manière. J'ai tout de suite aperçu sa disparition en arrivant ce matin.",
+    "content": "Son grand coffre a disparu, il reste un endroit propre sans poussière. Il faut croire que l'oisiveté de notre majordome a fait avancer cette enquête à sa manière. J'ai tout de suite aperçu sa disparition en arrivant ce matin.",
     "childrenNames": []
   },
   {
@@ -205,11 +202,11 @@
       "x": 1534,
       "y": 1163
     },
-    "name": "cerisiers",
+    "name": "amandes",
     "tags": [
       ""
     ],
-    "content": "Il adore tellement les cerises, qu'il a planté un cerisier dans le jardin. Il l'a mis sur son tableau.",
+    "content": "Il adore tellement les amandes, qu'il a planté un amandier dans le jardin. Tenez regardez, il a collé une branche sur le mur. Il me disait récemment qu’il avait des grands projets pour cet amandier, qu’il ferait un jour partie de quelque chose de *grandiose*. Moi je n’écoutais que d’une oreille vous savez.",
     "childrenNames": []
   },
   {
@@ -222,7 +219,7 @@
     "tags": [
       ""
     ],
-    "content": "Il a peur de l'abandon, et il est souvent capable de se mettre en danger pour pousser les gens à le sauver et à montrer ainsi leur affection pour lui.",
+    "content": "Il a peur de l'abandon, et il est souvent capable de se mettre en danger pour pousser les gens à montrer leur affection pour lui en venant le sauver. J’espère qu’il ne s’est pas mis dans une mauvaise situation, toute cette histoire commence à m’inquiéter je vous l’accorde.",
     "childrenNames": []
   },
   {
@@ -235,7 +232,7 @@
     "tags": [
       ""
     ],
-    "content": "Il adore les armes, mais je crois que son arme favorite est l'arc, même s'il ne tire plus. Il fut dans le temps un excellent archer.",
+    "content": "Il adore les armes anciennes et l’Histoire militaire, je crois que son arme favorite est l'arc même s'il ne tire plus depuis qu’il s’est blessé il y a quelques années. Il fut dans le temps un excellent archer.",
     "childrenNames": []
   },
   {
@@ -248,7 +245,7 @@
     "tags": [
       ""
     ],
-    "content": "Maître Bourdy était passionné par le Japon, particulièrement les travaux autour du Seppuku, il trouvait fascinant cette façon de mettre en scène la mort. Il parlait souvent de faire une Oeuvre autour de ça.",
+    "content": "Maître Bourdy était fasciné par le Japon, particulièrement les travaux autour du Seppuku. Il était obsédé par cette façon de mettre en scène la mort. Il envisageait de travailler et faire une oeuvre autour de ce concept.",
     "childrenNames": []
   },
   {
@@ -261,7 +258,7 @@
     "tags": [
       ""
     ],
-    "content": "Il jouait aussi souvent avec des chaînes, le processus de libération de l'esclave tout autant que le fait de se laisser enchaîner. Il les a emmenées près du bois et c'est étrange, c'est comme sur le dernier tableau Héraclite qu'il nous offre.",
+    "content": "Il jouait aussi avec le concept des chaînes, le processus de libération de l'esclave tout comme le fait de se laisser enchaîner. Le dernier chèque que j’ai signé, pas plus tard que jeudi, une “avance” sur une prochaine oeuvre, était justement pour financer l’achat de plusieurs mètres de chaînes. Il était très excité. La commissaire dit qu’elle en a retrouvé près du bois, mais je peux vous assurer qu’il en manque une grande partie.",
     "childrenNames": []
   },
   {
@@ -274,7 +271,7 @@
     "tags": [
       ""
     ],
-    "content": "Ses derniers travaux portent sur les corps contorsionnés, je ne sais pas si celà vous aide. Il cherchait à représenter Houdini à l'intérieur de son coffre.",
+    "content": "Ses derniers travaux portent sur les corps contorsionnés, je ne sais pas si cela vous aide. J’ai vu ses croquis, il cherchait à représenter Houdini à l'intérieur de son coffre, et l’évasion de justesse.",
     "childrenNames": []
   },
   {
@@ -287,7 +284,7 @@
     "tags": [
       ""
     ],
-    "content": "La plongée sous-marine était une de ses passions, il avait passé différents niveaux, il y trouvait un plaisir infini. D'ailleurs, je me demande où sont passées ses deux bouteilles d'oxygène pleines. Si son Oeuvre a une durée pour être sauvée, c'est probablement celle des bouteilles.",
+    "content": "La plongée sous-marine était un de ses passes-temps à l’époque. ll y prenait grand plaisir. Mais cela fait longtemps qu’il n’a pas pratiqué, je ne sais pas pourquoi il aurait utilisé ses vieilles bouteilles pour son oeuvre.... Sapristi ! Les bouteilles servent à maintenir quelqu'un en vie sous l’eau ! ",
     "childrenNames": []
   },
   {
@@ -300,7 +297,7 @@
     "tags": [
       ""
     ],
-    "content": "J'ai été réveillée par un appel du divisionnaire pour me sortir du lit car une femme a disparu cette nuit, d'où mon humeur. Cette femme, c'est l'ex-femme de l'artiste et il l'a appelée dans la soirée. Et maintenant l'artiste a lui aussi disparu. Je ne fais aucune hypothèse pour l'instant, en tout cas pas avant d'avoir bu un café.",
+    "content": "J'ai été réveillée par un appel du divisionnaire qui m’a sorti du lit car une femme a disparu cette nuit, d'où mon humeur. Cette femme, c'est l'ex-femme de l'artiste et il l'aurait appelée dans la soirée. Et maintenant l'artiste a lui aussi disparu. Je ne fais aucune hypothèse pour l'instant, en tout cas pas avant d'avoir bu un café.",
     "childrenNames": []
   },
   {
@@ -313,7 +310,7 @@
     "tags": [
       ""
     ],
-    "content": "J'ai trouvé cette carte, je crois qu'il veut que nous trouvions 4 objets. J'ai trouvé le IV de Tarot, l'Empereur, à coté du tableau. Le point de croisement des deux lignes créées par les quatre objets indiquera le lieu et l'emplacement de son Oeuvre d'Art. J'ai peur que son Oeuvre soit tordue et qu'il ne l'ait fabriquée avec un être vivant et humain.",
+    "content": "Cette carte là, sur le mur, je crois qu'il veut que nous y trouvions 4 objets qui nous mèneront probablement à son “Oeuvre”. Tout fonctionne par quatre dans ses énigmes, ça doit lui venir de la numérologie, ou que sais-je. Enfin moi, c’que j’en dis.... J'ai bien peur que son Oeuvre ne soit aussi tordue que lui et qu'il ne l'ait fabriquée avec un être vivant et humain.",
     "childrenNames": []
   },
   {
@@ -326,7 +323,7 @@
     "tags": [
       ""
     ],
-    "content": "Cet escarpin, en fait, n'appartient pas à la femme disparue, contrairement à ce que je croyais, j'ai appris que c'est un de ses objets fétiches. Et j'avoue que son fétichisme pour les chaussures de femmes ne me rassure pas. L'objet était à côté du puit exactement au même endroit que sur ce tableau.",
+    "content": "Cet escarpin appartient à son ex-femme disparue. J'ai appris que c'est un des objets fétiches de l'artiste. Et j'avoue que son goût pour les chaussures de femmes ne me rassure pas. L'objet était à côté du puit exactement au même endroit que sur ce tableau. Regardez.",
     "childrenNames": []
   },
   {
@@ -339,7 +336,7 @@
     "tags": [
       ""
     ],
-    "content": "La police frappe à votre porte et vous embarque sur la propriété d'Adrien Bourdy. vous ne le connaissez ni d'Eve, ni d'Adam et justement cela semble très louche aux forces de l'ordre.",
+    "content": "La police frappe à votre porte et vous embarque manu militari sur la propriété d'Adrien Bourdy. vous ne le connaissez ni d'Eve, ni d'Adam, et justement cela semble très louche aux yeux des forces de l'ordre.",
     "childrenNames": []
   },
   {
@@ -352,7 +349,7 @@
     "tags": [
       ""
     ],
-    "content": "J'ai un doute sur des énormes empreintes d'ours apparues à l'orée du bois. Mais je ne crois pas au Yeti et cela va nous mener sur une fausse piste, c'est le problème avec ces artistes. Tu vois des traces et en fait c'est un truc arty à la noix.",
+    "content": "J'ai un doute sur les énormes empreintes d'ours visibles à l'orée du bois. Mais je ne crois pas au Yéti et cela va encore nous mener sur une fausse piste. C'est ça le problème avec ces artistes. Tu vois des traces et en fait c'est un truc arty à la noix.",
     "childrenNames": []
   },
   {
@@ -361,11 +358,11 @@
       "x": 880,
       "y": 1164
     },
-    "name": "Lose",
+    "name": "Perdu",
     "tags": [
       ""
     ],
-    "content": "LOOSE  Les équipes de la PJ plongent dans le lac et ressortent un coffre, dans celui-ci, monsieur Bourdy cadavérique avec des bouteilles d'oxygène près de lui. Quelques jours après, dans le Parisien, un article explique l'arrestation de l'ex-femme de Monsieur Bourdy, qui l'a poussé et aidé à monter cette mise en scène et n'étant pas sûr qu'il puisse s'en sortir à décidé de fuir en le laissant à une mort certaine. Vous, vous savez que cette mort, vous auriez pu l'éviter. ",
+    "content": "Les équipes de la PJ plongent dans le lac et en ressortent un coffre. Dans celui-ci, un Monsieur Bourdy cadavérique avec des bouteilles d'oxygène. Quelques jours après, dans le Parisien, un article explique l'arrestation de l'ex-femme de Monsieur Bourdy, qui l'a poussé et aidé à monter cette mise en scène. N'étant pas sûre qu'il puisse s'en sortir vivant, elle a décidé de fuir en le laissant à une mort certaine. Vous, vous savez que cette mort, vous auriez pu l'éviter.",
     "childrenNames": []
   },
   {
@@ -374,11 +371,24 @@
       "x": 1088,
       "y": 1156
     },
-    "name": "Win",
+    "name": "Gagné",
     "tags": [
       ""
     ],
-    "content": "WIN  Vous avez réussi à trouver l'emplacement de l'Oeuvre avant le temps imparti, les équipes de la PJ plongent dans le lac et ressortent un coffre, dans celui-ci, monsieur Bourdy frigorifié tète une bouteille d'oxygène en regardant autour de lui. Ses premiers mots sont pour vous. Merci cher ami, vous venez de me délivrer d'une mort certaine dans laquelle je me suis jeté. C'était ma grande oeuvre, jouer aux dés avec la vie et être ainsi un artiste tout puissant. Je suis sûr que tout le monde se souviendra de mon Oeuvre. Quelques jours après un article assassin sur l'artiste Bourdy apparait dans Libération expliquant les névroses de l'artiste contemporain et la participation de l'auteure de l'article, son ex-femme, dans cette mise en scène. ",
+    "content": "Vous avez réussi à trouver l'emplacement du Chef d'Oeuvre avant le temps imparti, les équipes de la PJ plongent dans le lac et ressortent un coffre. Dans celui-ci : monsieur Bourdy frigorifié tète une bouteille d'oxygène en regardant autour de lui. Ses premiers mots sont pour vous : “Merci cher ami, vous venez de me délivrer d'une mort certaine dans laquelle je me suis jeté à dessein. C'était mon Chef d’Oeuvre, laisser ma vie entre les mains du public et du destin. Je suis sûr que tout le monde se souviendra de cet acte héroïque.” Quelques jours après, un article assassin apparaît dans *Libération*, “L’échec de Bourdy ou l’art dépassé” expliquant les névroses de l'artiste contemporain narcissique. L’auteure en est son ex-femme. ",
+    "childrenNames": []
+  },
+  {
+    "pid": 28,
+    "position": {
+      "x": 1000,
+      "y": 825
+    },
+    "name": "Oxygène",
+    "tags": [
+      ""
+    ],
+    "content": "Soudain, Gérard Duvin, le majordome, arrive en claudiquant. 'Il semble que les bouteilles de plongée de Monsieur aient disparu.\\n\\n”Régine Martineau s'exclame “Alors c’est un compte à rebours, dépêchez-vous de résoudre l’énigme, j’ai un mauvais pressentiment. Allez interroger les témoins maintenant !”",
     "childrenNames": []
   }
 ]
