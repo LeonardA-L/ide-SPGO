@@ -1,0 +1,152 @@
+$icon-7_coffre: 0px 0px 47px 63px;
+$icon-20_main: 0px -63px 128px 104px;
+$icon-18_croquis_manoir: 0px -167px 171px 106px;
+$icon-13_roue_astrologique: 0px -273px 111px 107px;
+$icon-12_charentaises: 0px -380px 128px 110px;
+$icon-17_escarpins: 0px -490px 90px 117px;
+$icon-1_poster_chiromancie: 0px -607px 94px 135px;
+$icon-9_la_disparue: 0px -742px 103px 135px;
+$icon-5_freud: 0px -877px 181px 154px;
+$icon-3_chaines: 0px -1031px 154px 155px;
+$icon-16_peinture_puits: 0px -1186px 170px 198px;
+$icon-15_harakiri: 0px -1384px 156px 201px;
+$icon-14_assiette_coquelicot: 0px -1585px 183px 213px;
+$icon-10_photo_houdini: 0px -1798px 288px 252px;
+$icon-2_peinture_foret: 0px -2050px 353px 254px;
+$icon-8_centaure: 0px -2304px 280px 275px;
+$icon-11_trophee_de_chasse: 0px -2579px 173px 282px;
+$icon-19_peinture_lac: 0px -2861px 250px 361px;
+$icon-4_fil_rouge: 0px -3222px 763px 486px;
+$icon-6_amandier: 0px -3708px 453px 499px;
+
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 3);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 4);
+}
+
+@function sprite-width($sprite) {
+  @return nth($sprite, 3);
+}
+
+@function sprite-height($sprite) {
+  @return nth($sprite, 4);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 1);
+  $sprite-offset-y: nth($sprite, 2);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite($sprite) {
+  @include sprite-position($sprite);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+.icon-7_coffre {
+  @include sprite($icon-7_coffre);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-20_main {
+  @include sprite($icon-20_main);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-18_croquis_manoir {
+  @include sprite($icon-18_croquis_manoir);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-13_roue_astrologique {
+  @include sprite($icon-13_roue_astrologique);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-12_charentaises {
+  @include sprite($icon-12_charentaises);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-17_escarpins {
+  @include sprite($icon-17_escarpins);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-1_poster_chiromancie {
+  @include sprite($icon-1_poster_chiromancie);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-9_la_disparue {
+  @include sprite($icon-9_la_disparue);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-5_freud {
+  @include sprite($icon-5_freud);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-3_chaines {
+  @include sprite($icon-3_chaines);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-16_peinture_puits {
+  @include sprite($icon-16_peinture_puits);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-15_harakiri {
+  @include sprite($icon-15_harakiri);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-14_assiette_coquelicot {
+  @include sprite($icon-14_assiette_coquelicot);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-10_photo_houdini {
+  @include sprite($icon-10_photo_houdini);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-2_peinture_foret {
+  @include sprite($icon-2_peinture_foret);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-8_centaure {
+  @include sprite($icon-8_centaure);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-11_trophee_de_chasse {
+  @include sprite($icon-11_trophee_de_chasse);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-19_peinture_lac {
+  @include sprite($icon-19_peinture_lac);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-4_fil_rouge {
+  @include sprite($icon-4_fil_rouge);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-6_amandier {
+  @include sprite($icon-6_amandier);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
