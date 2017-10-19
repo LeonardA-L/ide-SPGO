@@ -12,7 +12,7 @@ export const config = {
   },
 
   oxygen: {
-    start: 85,
+    start: 100,
     elementDecay: 5,
     witnessDecay: 1
   },
