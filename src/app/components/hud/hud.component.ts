@@ -87,7 +87,7 @@ export class HudComponent implements OnInit {
     delay(300)
     .then(() => {
       this.failure = true;
-      return delay(1000);
+      return delay(500);
     })
     .then(() => {
       this.failure = false;

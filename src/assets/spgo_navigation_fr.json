@@ -9,7 +9,7 @@
     "tags": [
       ""
     ],
-    "content": "Un matin pourtant ordinaire, vous recevez sur votre paillasson une lettre sans cachet de la poste. La vieille enveloppe en papier épais est scellée à la cire. [[Lire la lettre->Lire la lettre]]  [[ne pas lire la lettre->ne pas lire la lettre]]",
+    "content": "Un matin pourtant ordinaire, vous recevez sur votre paillasson une lettre sans cachet de la poste, elle porte votre nom écrit à la main. La vieille enveloppe en papier épais est scellée à la cire. [[Lire la lettre->Lire la lettre]]  [[ne pas lire la lettre->ne pas lire la lettre]]",
     "childrenNames": [
       "[[Lire la lettre->Lire la lettre]]",
       "[[ne pas lire la lettre->ne pas lire la lettre]]"
@@ -25,7 +25,7 @@
     "tags": [
       ""
     ],
-    "content": "Bonjour cher(e) ami(e), des années de travail artistique m'ont conduit à réaliser ma plus grande Oeuvre. Peu de personnes, sont capables d'appréhender la puissance de l'acte créateur qui se joue aujourd'hui. Vous êtes pris de force à jouer à ce jeu. Je vous propose de relancer les dés et de remettre en cause l'ensemble des valeurs qui sont établies en ce monde. Si vous êtes attentif à mon travail, mes passions et à mes objets fétiches, vous serez capable de trouver cette Oeuvre que j'ai cachée dans ma propriété. Il faut la trouver rapidement, j'ai mis au point un dispositif qui risque de la détruire. En effet, cette Oeuvre est vivante et sa survie est entre vos mains. Dépêchez-vous, je pense que vous croiserez assez de personnes sur ma propriété pour avoir les réponses à vos questions...Trouvez l'Oeuvre ultime. J'ai un grain, je vous l'accorde, mais cela fait tout mon charme. Adieu. Adrien Bourdy  [[Se rendre sur la propriété->se rendre sur la propriété]]  [[Déchirer la lettre->la police vous embarque]]",
+    "content": "Bonjour, vous ne me connaissez pas. Des années de travail artistique m'ont conduit à réaliser ma plus grande Oeuvre. Peu de personnes, sont capables d'appréhender la puissance de l'acte créateur qui se joue aujourd'hui. Pourtant j'y ai dédié ma vie. Je vous ai choisi au hasard, car le choc artistique que doit provoquer cette Oeuvre sera grandiose. Si vous êtes attentif à mon travail, mes passions et à mes objets fétiches, vous serez capable de trouver cette Oeuvre que j'ai cachée dans ma propriété. Il faut la trouver très rapidement, j'ai mis au point un dispositif qui va la détruire. Mais vous pouvez l'empêcher. En effet, cette Oeuvre est vivante et sa survie est entre vos mains. Dépêchez-vous, je pense que vous croiserez assez de personnes sur ma propriété pour avoir les réponses à vos questions...Trouvez l'Oeuvre ultime. J'ai un grain, je vous l'accorde, mais cela fait tout mon charme. Adieu. Adrien Bourdy  [[Se rendre sur la propriété->se rendre sur la propriété]]  [[Déchirer la lettre->la police vous embarque]]",
     "childrenNames": [
       "[[Se rendre sur la propriété->se rendre sur la propriété]]",
       "[[Déchirer la lettre->la police vous embarque]]"
@@ -54,7 +54,7 @@
     "tags": [
       ""
     ],
-    "content": "A l'entrée, la commissaire Régine Martineau vous attend avec impatience devant un grand mur chargé d’objets, qui semble être le dernier travail de l’artiste :\\n\\n'Vous êtes pour l'instant la seule personne capable de répondre à cette énigme d’après Adrien Bourdy, qui vous a écrit. Prouvez-moi votre utilité en trouvant son Chef d’Oeuvre. Il y a eu une autre disparition dans les environs, son ex-femme est introuvable depuis la nuit dernière.\\n\\nRegardez ce mur : j’ai fait le tour du domaine, et on dirait que les éléments affichés ici représentent une carte de la propriété : des coquelicots à l’entrée, le manoir et son puits à droite, l’amandier qui trône dans le jardin, le lac en bas à droite, et le petit bosquet en bas à gauche.\\n\\n**Votre tâche**, c’est de sélectionner les 4 indices sur ce mur qui vous semblent les plus pertinents en interrogeant les témoins, ça devrait nous aider à faire avancer l’enquête.'  [[Continuer->Oxygène]]",
+    "content": "A l'entrée, la commissaire Régine Martineau vous attend avec impatience devant un grand mur chargé d’objets, qui semble être le dernier travail de l’artiste :\\n\\n'Merci pour votre collaboration grâce à ce courrier peut-etre pourrions nous résoudre cette énigme. Plus inquiétant : son ex-femme est introuvable depuis la nuit dernière.\\n\\nRegardez ce mur : j’ai fait le tour du domaine, et on dirait que les éléments affichés ici représentent une carte de la propriété. Tout correspond, on retrouve les coquelicots à l’entrée du manoir, son puits à droite, l’amandier qui trône dans le jardin, le lac , et le petit bosquet, mais les autres images restent un mystère.\\n\\n\\n\\n**Votre tâche**, c’est de sélectionner les 4 indices sur ce mur qui vous semblent les plus pertinents en interrogeant les témoins, ça devrait nous aider à faire avancer l’enquête.'  [[Continuer->Oxygène]]",
     "childrenNames": [
       "[[Continuer->Oxygène]]"
     ]
@@ -69,12 +69,11 @@
     "tags": [
       ""
     ],
-    "content": "Ecoutez-moi bien, je m'en contrefous de l'art contemporain, mais j'ai sur les bras la disparition d'un homme et d'une femme. Et vous, vous êtes pour l'instant mon unique suspect. Ce mur ressemble vachement à une carte au trésor d’artiste en manque d’attention. J'ai trouvé un escarpin près du puits, une femme à disparu et il y a des empreintes d’ours près du bois. Une femme a disparu et il n’y a même pas de café dans ce manoir à la noix. Moi, ce qu’ j’en dis de l’art contemporain … Enfin regardez le tableau, il ne vous a sûrement pas écrit par hasard. [[parlez-moi de la femme disparue->disparue]] [[parlez-moi de la carte au trésor->carte au trésor]] [[parlez-moi de l'escarpin->escarpin]] [[parlez-moi des empreintes d'ours->empreintes]]",
+    "content": "Ecoutez-moi bien, je m'en contrefous de l'art contemporain, mais j'ai sur les bras la disparition d'un homme et d'une femme. Et vous, vous êtes pour l'instant mon unique suspect. Ce mur ressemble vachement à une carte au trésor d’artiste en manque d’attention. J'ai trouvé un escarpin près du puits, une femme à disparu et il y a des empreintes d’ours près du bois. Une femme a disparu et il n’y a même pas de café dans ce manoir à la noix. Moi, ce qu’ j’en dis de l’art contemporain … Enfin regardez le tableau, il ne vous a sûrement pas écrit par hasard. [[parlez-moi de la femme disparue->disparue]] [[parlez-moi de la carte au trésor->carte au trésor]] [[parlez-moi de l'escarpin->escarpin]]",
     "childrenNames": [
       "[[parlez-moi de la femme disparue->disparue]]",
       "[[parlez-moi de la carte au trésor->carte au trésor]]",
-      "[[parlez-moi de l'escarpin->escarpin]]",
-      "[[parlez-moi des empreintes d'ours->empreintes]]"
+      "[[parlez-moi de l'escarpin->escarpin]]"
     ]
   },
   {
@@ -303,8 +302,8 @@
   {
     "pid": 22,
     "position": {
-      "x": 56,
-      "y": 142
+      "x": 196,
+      "y": 144
     },
     "name": "carte au trésor",
     "tags": [
@@ -323,7 +322,7 @@
     "tags": [
       ""
     ],
-    "content": "Cet escarpin appartient à son ex-femme disparue. J'ai appris que c'est un des objets fétiches de l'artiste. Et j'avoue que son goût pour les chaussures de femmes ne me rassure pas. L'objet était à côté du puit exactement au même endroit que sur ce tableau. Regardez.",
+    "content": "Ces escarpins appartiennent à son ex-femme qui est portée disparue. Que font-ils ici? Bourdy et son ex-femme sont en très mauvais rapports. Pauline affirme que sa mère n'est jamais revenue au domaine depuis leur divorce. Il va falloir en apprendre plus...   ",
     "childrenNames": []
   },
   {
@@ -342,19 +341,6 @@
   {
     "pid": 25,
     "position": {
-      "x": 207,
-      "y": 140
-    },
-    "name": "empreintes",
-    "tags": [
-      ""
-    ],
-    "content": "J'ai un doute sur les énormes empreintes d'ours visibles à l'orée du bois. Mais je ne crois pas au Yéti et cela va encore nous mener sur une fausse piste. C'est ça le problème avec ces artistes. Tu vois des traces et en fait c'est un truc arty à la noix.",
-    "childrenNames": []
-  },
-  {
-    "pid": 26,
-    "position": {
       "x": 880,
       "y": 1164
     },
@@ -362,11 +348,11 @@
     "tags": [
       ""
     ],
-    "content": "Les équipes de la PJ plongent dans le lac et en ressortent un coffre. Dans celui-ci, un Monsieur Bourdy cadavérique avec des bouteilles d'oxygène. Quelques jours après, dans le Parisien, un article explique l'arrestation de l'ex-femme de Monsieur Bourdy, qui l'a poussé et aidé à monter cette mise en scène. N'étant pas sûre qu'il puisse s'en sortir vivant, elle a décidé de fuir en le laissant à une mort certaine. Vous, vous savez que cette mort, vous auriez pu l'éviter.",
+    "content": "Les équipes de la PJ plongent dans le lac et en ressortent un coffre. Dans celui-ci, le cadavre d'Adrien Bourdy repose près de bouteille d'oxygène vide. Il est mort asphyxié. Quelques jours après, dans le Parisien, un article explique l'arrestation de l'ex-femme de Monsieur Bourdy, qui l'a poussé et aidé à monter cette mise en scène. Ayant pris peur devant l'énormité de son oeuvre ultime, elle a décidé de fuir en le laissant à une mort certaine. Vous, vous savez que cette mort, vous auriez pu l'éviter.",
     "childrenNames": []
   },
   {
-    "pid": 27,
+    "pid": 26,
     "position": {
       "x": 1088,
       "y": 1156
@@ -375,11 +361,11 @@
     "tags": [
       ""
     ],
-    "content": "Vous avez réussi à trouver l'emplacement du Chef d'Oeuvre avant le temps imparti, les équipes de la PJ plongent dans le lac et ressortent un coffre. Dans celui-ci : monsieur Bourdy frigorifié tète une bouteille d'oxygène en regardant autour de lui. Ses premiers mots sont pour vous : “Merci cher ami, vous venez de me délivrer d'une mort certaine dans laquelle je me suis jeté à dessein. C'était mon Chef d’Oeuvre, laisser ma vie entre les mains du public et du destin. Je suis sûr que tout le monde se souviendra de cet acte héroïque.” Quelques jours après, un article assassin apparaît dans *Libération*, “L’échec de Bourdy ou l’art dépassé” expliquant les névroses de l'artiste contemporain narcissique. L’auteure en est son ex-femme. ",
+    "content": "Vous avez réussi à trouver l'emplacement du Chef d'Oeuvre avant le temps imparti, les équipes de la PJ plongent dans le lac et ressortent un coffre. Dans celui-ci : monsieur Bourdy frigorifié tète une bouteille d'oxygène en regardant autour de lui. Ses premiers mots sont pour vous : “Merci cher inconnu, vous venez de me délivrer d'une mort certaine dans laquelle je me suis jeté à dessein. C'était mon Chef d’Oeuvre, laisser ma vie entre les mains du public et du destin. Je suis sûr que tout le monde se souviendra de cette performance artistique.” Quelques jours après, un article assassin apparaît dans *Libération*, “L’échec de Bourdy ou l’art dépassé” expliquant les névroses de l'artiste contemporain narcissique. L’auteure en est son ex-femme. ",
     "childrenNames": []
   },
   {
-    "pid": 28,
+    "pid": 27,
     "position": {
       "x": 1000,
       "y": 825
