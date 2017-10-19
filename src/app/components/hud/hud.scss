@@ -75,7 +75,7 @@ hud {
       display: inline-block;
       width: 25%;
       vertical-align: middle;
-
+      transition: filter $medium;
       @include drop-shadow($elemHover);
     }
     .element.fail {
