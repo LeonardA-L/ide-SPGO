@@ -69,7 +69,7 @@
     "tags": [
       ""
     ],
-    "content": "Listen, I couldn't care less about modern art, but I have a lot on my plate right now, including the disappearance of a man and a woman. Et you, are for now my sole suspect. This wall looks a lot like a treasure map drawn by an artist in need of attention. I found a pair of shoes near the well. If you ask me what I think about modern art... Anyway, take a look at this wall, he surely didn't write to you at random. [[Tell me about the missing woman->disparue]] [[Tell me about the treasure map->carte au trésor]] [[Tell me about the shoes->escarpin]]",
+    "content": "Listen, I couldn't care less about modern art, but I have a lot on my plate right now, including the disappearance of a man and a woman. Et you, are for now my sole suspect. This wall looks a lot like a treasure map drawn by an artist in need of attention. I found a pair of shoes near the well, and a woman has disappeared, it may be linked. If you ask me what I think about modern art... Anyway, take a look at this wall, he surely didn't write to you at random. [[Tell me about the missing woman->disparue]] [[Tell me about the treasure map->carte au trésor]] [[Tell me about the shoes->escarpin]]",
     "childrenNames": [
       "[[Tell me about the missing woman->disparue]]",
       "[[Tell me about the treasure map->carte au trésor]]",
