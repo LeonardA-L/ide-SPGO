@@ -45,8 +45,11 @@ export class GameService {
   public initGame(lang?) {
     this.translate.setDefaultLang(lang || this.translate.getDefaultLang());
     const service = this;
-    const fileName = CONFIG.root + '/assets/spgo_navigation_' + this.translate.getDefaultLang() + '.json';
-    this.http.get(fileName).map((res) => res.json()).subscribe((success) => service.startGame(success));
+    const fileName = CONFIG.root + '/assets/spgo_navigation_' + (lang || this.translate.getDefaultLang()) + '.json';
+    this.http.get(fileName).map((res) => res.json()).subscribe((success) => {
+      this.json = JSON.stringify(success);
+      service.startGame(success);
+    });
   }
 
   public startGame(json) {
