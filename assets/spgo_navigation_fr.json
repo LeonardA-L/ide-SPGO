@@ -69,7 +69,7 @@
     "tags": [
       ""
     ],
-    "content": "Ecoutez-moi bien, je m'en contrefous de l'art contemporain, mais j'ai sur les bras la disparition d'un homme et d'une femme. Et vous, vous êtes pour l'instant mon unique suspect. Ce mur ressemble vachement à une carte au trésor d’artiste en manque d’attention. J'ai trouvé un escarpin près du puits, une femme à disparu et il y a des empreintes d’ours près du bois. Une femme a disparu et il n’y a même pas de café dans ce manoir à la noix. Moi, ce qu’ j’en dis de l’art contemporain … Enfin regardez le tableau, il ne vous a sûrement pas écrit par hasard. [[parlez-moi de la femme disparue->disparue]] [[parlez-moi de la carte au trésor->carte au trésor]] [[parlez-moi de l'escarpin->escarpin]]",
+    "content": "Ecoutez-moi bien, je m'en contrefous de l'art contemporain, mais j'ai sur les bras la disparition d'un homme et d'une femme. Et vous, vous êtes pour l'instant mon unique suspect. Ce mur ressemble à une carte au trésor d’artiste en manque d’attention. J'ai trouvé des escarpins près du puits et une femme a disparu, c'est peut-être lié. Il n’y a même pas de café dans ce manoir à la noix. Vous savez, moi, ce que j’en dis de l’art contemporain … Enfin regardez le tableau, il ne vous a sûrement pas écrit par hasard. [[parlez-moi de la femme disparue->disparue]] [[parlez-moi de la carte au trésor->carte au trésor]] [[parlez-moi de l'escarpin->escarpin]]",
     "childrenNames": [
       "[[parlez-moi de la femme disparue->disparue]]",
       "[[parlez-moi de la carte au trésor->carte au trésor]]",
