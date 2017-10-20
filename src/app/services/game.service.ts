@@ -173,7 +173,7 @@ export class GameService {
     delay(1000)
     .then(() => {
       this.broadcaster.broadcast('showThread');
-      return delay(1000);
+      return delay(1800);
     })
     .then(() => {
       this.broadcaster.broadcast('showThread');

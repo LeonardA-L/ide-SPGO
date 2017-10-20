@@ -21,7 +21,7 @@ wall {
 
   .element {
     position: absolute;
-    transition: filter $medium, opacity $slow;
+    transition: filter $medium, opacity $slowest;
     cursor: pointer;
     opacity: 1;
   }
