@@ -41,6 +41,7 @@ export class AudioService {
     }
     console.log('audioPlay');
     this.playloop = true;
+    this.initSpatialized();
 
     const service = this;
     function time() {
@@ -53,8 +54,10 @@ export class AudioService {
   }
 
   private update() {
-    if (this.playloop && !this.playing && new Date().getTime() - this.lastPlay.getTime() > 10000) {
-      let audio = this.audios[Math.floor(Math.random() * this.audios.length)];
+    if (this.playloop && !this.playing && new Date().getTime() - this.lastPlay.getTime() > 15000) {
+      const rand = Math.floor(Math.random() * this.audios.length);
+      console.log('Playing sound', rand);
+      let audio = this.audios[rand];
       if (audio) {
         this.playing = true;
         audio.dom.currentTime = 0;
@@ -62,6 +65,55 @@ export class AudioService {
 
       }
     }
+  }
+
+  private initSpatialized() {
+    const sources = [
+      {
+        src: CONFIG.root + '/assets/sounds/amb_lake.mp3',
+        x: 600,
+        y: 450,
+        fac: 0.2,
+        elem: null,
+        audio: null
+      },
+      {
+        src: CONFIG.root + '/assets/sounds/amb_forest.mp3',
+        x: 50,
+        y: 500,
+        fac: 1,
+        elem: null,
+        audio: null
+      },
+    ];
+    for (let i in sources) {
+      if (sources.hasOwnProperty(i)) {
+        let source = sources[i];
+        let elem = document.createElement('div');
+        source.elem = elem;
+        let audio = document.createElement('audio');
+        audio.src = source.src;
+        audio.loop = true;
+        audio.currentTime = 0;
+        audio.play();
+        audio.volume = 0.1;
+        source.audio = audio;
+        document.getElementById('elements-wrapper').appendChild(elem);
+      }
+    }
+    let distanceMax = 600;
+    let decrease = 1 / (distanceMax * distanceMax);
+    document.body.onmousemove = function(e) {
+      for (let i in sources) {
+        if (sources.hasOwnProperty(i)) {
+          let source = sources[i];
+          let distance = Math.sqrt((e.clientX - source.x) * (e.clientX - source.x) + (e.clientY - source.y) * (e.clientY - source.y));
+          let newVal = 1 - Math.min(1, distance * distance * decrease);
+          newVal = Math.min(1, source.fac * newVal);
+          source.audio.volume = newVal;
+        }
+      }
+    };
   }
 
   private addAudio(_src, _master) {

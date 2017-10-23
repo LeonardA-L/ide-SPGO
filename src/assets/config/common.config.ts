@@ -22,7 +22,7 @@ export const config = {
   maxElem: 4,
 
   audio: {
-    master: 1,
+    master: 0.8,
     ramp: 10, // s
   }
 
