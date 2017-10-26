@@ -19,7 +19,7 @@ export const config = {
   tankDisplayDelay: 2000,
   witDisplayDelay: 3000,
   tesDisplayDelay: 900,
-  maxElem: 4,
+  maxElem: 3,
 
   audio: {
     master: 0.8,

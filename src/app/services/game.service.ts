@@ -170,14 +170,22 @@ export class GameService {
       });
     }
 
-    delay(1000)
+    delay(600)
     .then(() => {
       this.broadcaster.broadcast('showThread');
-      return delay(1800);
+      return delay(1200);
     })
     .then(() => {
       this.broadcaster.broadcast('showThread');
-      return delay(3000);
+      return delay(400);
+    })
+    .then(() => {
+      this.broadcaster.broadcast('showThread');
+      return delay(400);
+    })
+    .then(() => {
+      this.broadcaster.broadcast('showThread');
+      return delay(2000);
     })
     .then(() => {
       this.broadcaster.broadcast('overlay', this.gameState.oxygen > 0 ? 'Win' : 'Lose');
