@@ -54,7 +54,7 @@
     "tags": [
       ""
     ],
-    "content": "A l'entrée, la commissaire Régine Martineau vous attend avec impatience devant un grand mur chargé d’objets, qui semble être le dernier travail de l’artiste :\\n\\n\\n\\n'Merci pour votre collaboration, grâce à ce courrier peut-etre pourrons nous résoudre cette énigme.\\n\\nPlus inquiétant : l'ex-femme de Bourdy est introuvable depuis la nuit dernière.\\n\\n\\n\\nRegardez ce mur : j’ai fait le tour du domaine, et on dirait que les éléments affichés ici représentent une carte de la propriété. Tout correspond, on retrouve les coquelicots à l’entrée du manoir, son puits à droite, l’amandier qui trône dans le jardin, le lac , et le petit bosquet, mais les autres images restent un mystère.\\n\\n\\n\\n**Votre tâche**, c’est de sélectionner les 4 indices sur ce mur qui vous semblent les plus pertinents en interrogeant les témoins, ça devrait nous aider à faire avancer l’enquête.'  [[Continuer->Oxygène]]",
+    "content": "A l'entrée, la commissaire Régine Martineau vous attend avec impatience devant un grand mur chargé d’objets, qui semble être le dernier travail de l’artiste :\\n\\n\\n\\n'Merci pour votre collaboration, grâce à ce courrier peut-etre pourrons nous résoudre cette énigme.\\n\\nPlus inquiétant : l'ex-femme de Bourdy est introuvable depuis la nuit dernière.\\n\\n\\n\\nRegardez ce mur : j’ai fait le tour du domaine, et on dirait que les éléments affichés ici représentent une carte de la propriété. Tout correspond, on retrouve les coquelicots à l’entrée du manoir, son puits à droite, le lac et le petit bosquet, mais les autres images restent un mystère.\\n\\n\\n\\n**Votre tâche**, c’est de sélectionner les 3 indices sur ce mur qui vous semblent les plus pertinents en interrogeant les témoins, ça devrait nous aider à faire avancer l’enquête.'  [[Continuer->Oxygène]]",
     "childrenNames": [
       "[[Continuer->Oxygène]]"
     ]
@@ -122,10 +122,9 @@
     "tags": [
       ""
     ],
-    "content": "Je n'ai rien à vous dire, je ne vous connais pas.\\n\\nBon si vous y tenez, mon père aimait - entre autres choses - les amandes. Il cultivait son propre amandier près du manoir, là, derrière ! Il a une collection d’armes anciennes, qu'il entrepose dans son coffre. Et si vous voulez tout savoir, il avait une peur atroce de l'abandon... qu’il combattait par son intérêt pour Freud et la psychanalyse en général. [[parlez-moi du coffre->coffre]] [[parez-moi des amandes->amandes]] [[parlez-moi de l'abandon->psy]] [[parlez-moi des armes->armes]]",
+    "content": "Je n'ai rien à vous dire, je ne vous connais pas.\\n\\nBon si vous y tenez, mon père a une collection d’armes anciennes, qu'il entrepose dans son coffre. Et si vous voulez tout savoir, il avait une peur atroce de l'abandon... qu’il combattait par son intérêt pour Freud et la psychanalyse en général. [[parlez-moi du coffre->coffre]] [[parlez-moi de l'abandon->psy]] [[parlez-moi des armes->armes]]",
     "childrenNames": [
       "[[parlez-moi du coffre->coffre]]",
-      "[[parez-moi des amandes->amandes]]",
       "[[parlez-moi de l'abandon->psy]]",
       "[[parlez-moi des armes->armes]]"
     ]
@@ -309,7 +308,7 @@
     "tags": [
       ""
     ],
-    "content": "Cette carte là, sur le mur, je crois qu'il veut que nous y trouvions 4 objets qui nous mèneront probablement à son “Oeuvre”. Tout fonctionne par quatre dans ses énigmes, ça doit lui venir de la numérologie, ou que sais-je. Enfin moi, c’que j’en dis.... J'ai bien peur que son Oeuvre ne soit aussi tordue que lui et qu'il ne l'ait fabriquée avec un être vivant et humain.",
+    "content": "Cette carte là, sur le mur, je crois qu'il veut que nous y trouvions 3 objets qui nous mèneront probablement à son “Oeuvre”. Tout fonctionne par trois dans ses énigmes, ça doit lui venir de la numérologie, ou que sais-je. Enfin moi, c’que j’en dis.... J'ai bien peur que son Oeuvre ne soit aussi tordue que lui et qu'il ne l'ait fabriquée avec un être vivant et humain.",
     "childrenNames": []
   },
   {

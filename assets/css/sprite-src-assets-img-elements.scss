@@ -1,25 +1,26 @@
-$icon-7_coffre: 0px 0px 47px 63px;
-$icon-20_main: 0px -63px 128px 104px;
-$icon-18_croquis_manoir: 0px -167px 171px 106px;
-$icon-13_roue_astrologique: 0px -273px 111px 107px;
-$icon-12_charentaises: 0px -380px 128px 110px;
-$icon-17_escarpins: 0px -490px 90px 117px;
-$icon-9_la_disparue: 0px -607px 103px 135px;
-$icon-1_poster_chiromancie: 0px -742px 94px 135px;
-$icon-5_freud: 0px -877px 183px 150px;
-$icon-3_chaines: 0px -1027px 154px 155px;
-$icon-16_peinture_puits: 0px -1182px 170px 198px;
-$icon-15_harakiri: 0px -1380px 156px 201px;
-$icon-14_assiette_coquelicot: 0px -1581px 183px 213px;
-$icon-10_photo_houdini: 0px -1794px 126px 243px;
-$icon-2_peinture_foret: 0px -2037px 353px 254px;
-$icon-8_centaure: 0px -2291px 280px 275px;
-$icon-11_trophee_de_chasse: 0px -2566px 173px 282px;
-$icon-FIL2: 0px -2848px 483px 297px;
-$icon-19_peinture_lac: 0px -3145px 250px 361px;
-$icon-FIL1: 0px -3506px 163px 373px;
-$icon-4_fil_rouge: 0px -3879px 763px 486px;
-$icon-6_amandier: 0px -4365px 453px 499px;
+$icon-20_main: 0px 0px 128px 104px;
+$icon-18_croquis_manoir: 0px -104px 171px 106px;
+$icon-13_roue_astrologique: 0px -210px 111px 107px;
+$icon-12_charentaises: 0px -317px 128px 110px;
+$icon-17_escarpins: 0px -427px 90px 117px;
+$icon-7_coffre: 0px -544px 215px 123px;
+$icon-9_la_disparue: 0px -667px 103px 135px;
+$icon-1_poster_chiromancie: 0px -802px 94px 135px;
+$icon-5_freud: 0px -937px 183px 150px;
+$icon-3_chaines: 0px -1087px 154px 155px;
+$icon-16_peinture_puits: 0px -1242px 170px 198px;
+$icon-15_harakiri: 0px -1440px 156px 201px;
+$icon-14_assiette_coquelicot: 0px -1641px 183px 213px;
+$icon-10_photo_houdini: 0px -1854px 126px 243px;
+$icon-2_peinture_foret: 0px -2097px 353px 254px;
+$icon-8_centaure: 0px -2351px 280px 275px;
+$icon-11_trophee_de_chasse: 0px -2626px 173px 282px;
+$icon-FIL2: 0px -2908px 483px 297px;
+$icon-19_peinture_lac: 0px -3205px 250px 361px;
+$icon-FIL1: 0px -3566px 163px 373px;
+$icon-4_fil_rouge: 0px -3939px 763px 486px;
+$icon-triangle: 0px -4425px 618px 496px;
+$icon-6_amandier: 0px -4921px 453px 499px;
 
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
@@ -52,11 +53,6 @@ $icon-6_amandier: 0px -4365px 453px 499px;
   @include sprite-height($sprite);
 }
 
-.icon-7_coffre {
-  @include sprite($icon-7_coffre);
-  background-image: url('../sprites/sprite-src-assets-img-elements.png');
-}
-
 .icon-20_main {
   @include sprite($icon-20_main);
   background-image: url('../sprites/sprite-src-assets-img-elements.png');
@@ -79,6 +75,11 @@ $icon-6_amandier: 0px -4365px 453px 499px;
 
 .icon-17_escarpins {
   @include sprite($icon-17_escarpins);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-7_coffre {
+  @include sprite($icon-7_coffre);
   background-image: url('../sprites/sprite-src-assets-img-elements.png');
 }
 
@@ -154,6 +155,11 @@ $icon-6_amandier: 0px -4365px 453px 499px;
 
 .icon-4_fil_rouge {
   @include sprite($icon-4_fil_rouge);
+  background-image: url('../sprites/sprite-src-assets-img-elements.png');
+}
+
+.icon-triangle {
+  @include sprite($icon-triangle);
   background-image: url('../sprites/sprite-src-assets-img-elements.png');
 }
 
